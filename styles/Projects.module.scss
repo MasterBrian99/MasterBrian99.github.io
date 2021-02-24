@@ -1,0 +1,8 @@
+.container {
+  padding: 4rem 6rem;
+  color: #fff;
+
+  @media (max-width: 942px) {
+    padding: 4rem 1rem;
+  }
+}

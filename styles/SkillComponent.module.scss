@@ -1,0 +1,28 @@
+.skill {
+  background: rgba(175, 175, 175, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 23rem;
+  color: #fff;
+  margin: 1rem;
+
+  h2 {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+  }
+
+  ul li {
+    font-size: 1.2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+}
+
+.skillIcon {
+  margin-bottom: 1rem;
+}
