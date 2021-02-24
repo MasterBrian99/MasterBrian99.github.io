@@ -6,6 +6,7 @@
     "build": "next build && next export",
     "start": "next start"
   },
+  "license" : "MIT",
   "dependencies": {
     "animate.css": "^4.1.1",
     "aos": "^3.0.0-beta.6",
