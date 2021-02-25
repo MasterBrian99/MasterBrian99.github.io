@@ -11,7 +11,8 @@ class MyDocument extends Document {
         return (
             <Html lang="en">
                 <Head>
-                    <meta name="description" content="pasindu pramodaya" />
+                    <meta name="description" content="Pasindu p konghawaththa-I am a programmer with good knowledge
+                     of frontend and backend techniques.I love spending time on fixing little details and optimizing web apps.   " />
                     <link rel="icon" type='image/x-icon' href='/favicon.ico' />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
@@ -21,7 +22,6 @@ class MyDocument extends Document {
                     />
                     <link rel="preconnect" href="https://fonts.gstatic.com" />
                     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"></link>
-                    <title>Pasindu Pramodaya    </title>
                 </Head>
                 <body>
                     <Main />
