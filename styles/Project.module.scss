@@ -1,0 +1,136 @@
+.main {
+  color: #343434;
+  width: 100%;
+  background-color: #f3f3f3;
+}
+.shape {
+  position: absolute;
+  transform: rotate(180deg);
+  line-height: 0;
+  left: 0;
+  width: 100%;
+  svg {
+    position: absolute;
+    display: block;
+    width: calc(100% + 40px);
+    height: 127px;
+    bottom: 0;
+    fill: #ffffff;
+    @media (max-width: 661px) {
+      display: none;
+    }
+  }
+}
+
+.mainProject {
+  padding-top: 10rem;
+  & p {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding: 0 2rem;
+  }
+  & > a {
+    margin: 3rem 0;
+    border: 1px solid black;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-weight: 700;
+  }
+}
+.projectLgset {
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.projectLg {
+  position: relative;
+  margin: 0.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  // box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.45);
+  img {
+    border-radius: 10px;
+    height: 14rem;
+    opacity: 0.5;
+    &:hover {
+      background-color: #343434;
+    }
+  }
+
+  & > div {
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(6, 8, 155);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+    margin-bottom: 8px;
+    h2 {
+      font-weight: 600;
+      font-size: 2rem;
+    }
+    p {
+      font-size: 1.3rem;
+      padding: 0 0.5rem;
+    }
+
+    & div {
+      margin-top: 0.8rem;
+      & a {
+        margin: 0.5rem;
+        width: 5rem;
+      }
+      :first-child {
+        background-color: transparent;
+        border: 2.5px solid #1f083d;
+        padding: 0.3rem 1rem;
+        border-radius: 80px;
+        &:hover {
+          background-color: #7510f7;
+          color: #fff;
+          transition: all 500ms;
+        }
+      }
+    }
+  }
+  &:hover > div {
+    visibility: visible;
+    opacity: 1;
+    transition: all 500ms;
+  }
+}
+.shapeBottom {
+  margin-bottom: -10px;
+}
+
+.shapeBottom .shapeFill {
+  fill: #ffffff;
+}
+.shapeFill {
+  @media (max-width: 661px) {
+    display: none;
+  }
+}
+// .projectSm {
+//   margin: 1rem;
+//   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+//   border-radius: 10px;
+//   width: 20rem;
+//   height: 8rem;
+//   background-color: #ffffff;
+
+//   & h1 {
+//     font-size: 1.6rem;
+//   }
+
+//   & > a {
+//     font-size: 1.3rem;
+//   }
+// }

@@ -1,6 +1,40 @@
-.skillDiv {
-  display: flex;
-  align-content: space-between;
-  justify-content: center;
-  flex-wrap: wrap;
+.main {
+  min-height: 80vh;
+  max-height: 100%;
+  color: #343434;
+  background-color: rgb(255, 255, 255);
+
+  & > h2 {
+    padding-top: 2rem;
+  }
+}
+
+.skillSet {
+  // background-color: aqua;
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.item {
+  width: 20rem;
+  margin: 1rem;
+  border-radius: 20px;
+  height: 20rem;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+  & > h2 {
+    font-weight: 500;
+    padding: 1rem 0.3rem 0.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  & > ul {
+    text-align: center;
+  }
 }
