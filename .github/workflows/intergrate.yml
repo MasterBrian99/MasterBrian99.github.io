@@ -14,7 +14,7 @@ jobs:
 
       - name: Build
         run: |
-          yarn ci
+          yarn install --frozen-lockfile
           yarn run build
 
       - name: Deploy
