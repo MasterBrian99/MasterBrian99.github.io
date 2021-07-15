@@ -1,11 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.scss";
-
+import HomeScreen from "../screens/HomeScreen";
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <h1>Hello</h1>
+    <div>
+      <div className="CircleContainerOne"></div>
+      <div className="CircleContainerTwo"></div>
+      <HomeScreen />
     </div>
   );
 }
