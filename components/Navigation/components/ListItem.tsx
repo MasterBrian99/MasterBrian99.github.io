@@ -32,8 +32,9 @@ const ListItem = () => {
             alignItems="center"
             ml="2"
             className={"list-item-contact"}
+            color="#000000"
           >
-            <ListIcon as={AiOutlineGithub} color="white" mr="1" />
+            <ListIcon as={AiOutlineGithub} color="black" mr="1" />
             Github
           </ListItems>
         </a>

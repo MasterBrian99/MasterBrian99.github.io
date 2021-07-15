@@ -1,5 +1,7 @@
 import React from "react";
-import { Container, Box, Text, Code, Grid, GridItem } from "@chakra-ui/react";
+import { Container, Box, Text, Grid } from "@chakra-ui/react";
+import TerminalCard from "./components/TerminalCard";
+
 const Hero = () => {
   return (
     <Container
@@ -12,7 +14,7 @@ const Hero = () => {
     >
       <Grid templateColumns="repeat(2, 1fr)" gap={6}>
         <Box w="100%" h="10">
-          <Text color="#2E7DAF" fontWeight="bold">
+          <Text color="#1390EB" fontWeight="bold">
             Looking for a Developer ?
           </Text>
           <Text fontSize="6xl" color="#ffffff" fontFamily="Montserrat">
@@ -20,7 +22,7 @@ const Hero = () => {
           </Text>
         </Box>
         <Box w="100%" h="10">
-          <Text>Hello</Text>
+          <TerminalCard />
         </Box>
       </Grid>
     </Container>

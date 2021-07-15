@@ -4,10 +4,15 @@ import NavigationLg from "../components/Navigation/NavigationLg";
 
 const HomeScreen = () => {
   return (
-    <div className={"home"}>
-      <NavigationLg />
-      <Hero />
-    </div>
+    <>
+      <div className="CircleContainerOne"></div>
+      <div className="CircleContainerTwo"></div>
+      <div className="CircleContainerThree"></div>
+      <div className={"home"}>
+        <NavigationLg />
+        <Hero />
+      </div>
+    </>
   );
 };
 

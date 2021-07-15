@@ -4,8 +4,6 @@ import HomeScreen from "../screens/HomeScreen";
 export default function Home() {
   return (
     <div>
-      <div className="CircleContainerOne"></div>
-      <div className="CircleContainerTwo"></div>
       <HomeScreen />
     </div>
   );

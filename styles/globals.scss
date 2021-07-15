@@ -1,12 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 
+body {
+  background-color: #000 !important;
+}
+
 .home {
-  background-image: url("../public/main/blurry-gradient-haikei.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
-  // font-family: "Montserrat", sans-serif;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(120px);
 }
 
 .list-item {
@@ -14,13 +15,13 @@
   border-radius: 20px;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
   }
 }
 .list-item-contact {
   padding: 0.5rem 0.9rem;
   border-radius: 20px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
   &:hover {
     background-color: transparent;
   }
@@ -32,8 +33,8 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#17c2ed, #0aa3c9);
-  clip-path: circle(8% at 40% 35%);
+  background: linear-gradient(#1390eb, #36c496);
+  clip-path: circle(8% at 50% 35%);
   z-index: -20;
 }
 
@@ -44,7 +45,19 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(#e91e63, #ffc107);
-  clip-path: circle(22% at 10% 10%);
+  background: linear-gradient(#e91e63, #dd6fb0);
+  clip-path: circle(18% at 10% 10%);
+  z-index: -20;
+}
+
+.CircleContainerThree {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#1390eb, #36c496);
+  clip-path: circle(10% at 90% 10%);
   z-index: -20;
 }
