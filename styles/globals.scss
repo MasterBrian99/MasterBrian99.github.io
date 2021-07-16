@@ -37,6 +37,7 @@ body {
   background: linear-gradient(#1390eb, #36c496);
   clip-path: circle(8% at 50% 35%);
   z-index: -20;
+  animation: top-bottom 8s linear infinite;
 }
 
 .CircleContainerTwo {
@@ -61,4 +62,56 @@ body {
   background: linear-gradient(#1390eb, #36c496);
   clip-path: circle(10% at 90% 10%);
   z-index: -20;
+}
+
+.none {
+  animation: moveInLeft ease-out 1s;
+}
+
+@keyframes top-bottom {
+  0% {
+    clip-path: circle(8% at 50% 35%);
+  }
+  50% {
+    clip-path: circle(8% at 50% 45%);
+  }
+  100% {
+    clip-path: circle(8% at 50% 35%);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInButton {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translate(0);
+  }
 }
