@@ -44,7 +44,6 @@ const Hero = () => {
           <Box marginTop="5">
             <Button
               size="lg"
-              Left="1rem"
               boxShadow="0px 0px 15px 0px rgba(19,144,235,0.72);"
               animation="moveInButton ease-in 1s"
             >

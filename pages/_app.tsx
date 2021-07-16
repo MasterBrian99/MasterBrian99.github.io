@@ -1,4 +1,5 @@
 import "../styles/globals.scss";
+import "../styles/mediascreen.scss";
 import { ChakraProvider } from "@chakra-ui/react";
 
 import { AppProps } from "next/app";
