@@ -1,5 +1,13 @@
 import React from "react";
-import { Container, Box } from "@chakra-ui/react";
+import {
+  Container,
+  Box,
+  Tag,
+  TagLabel,
+  TagLeftIcon,
+  TagRightIcon,
+  TagCloseButton,
+} from "@chakra-ui/react";
 import Tilt from "react-parallax-tilt";
 import { AiFillCloseCircle, AiOutlineFullscreen } from "react-icons/ai";
 import { FaRegWindowMinimize } from "react-icons/fa";
@@ -35,7 +43,32 @@ const TerminalCard = () => {
               />
               {/* <span className={styles.dot}>·</span> */}
             </Box>
-            <h1>Hello</h1>
+            <Box display="flex">
+              <h1 className={styles.mainTerminalText}>
+                [pasindu@portfolio ~]${" "}
+              </h1>
+              <p className={styles.installCode}> yarn add pasindu-pramodaya</p>
+            </Box>
+            <Box display="flex" flexDir="column" className={styles.lineCode}>
+              <p>[1/4] Resolving packages...</p>
+              <p>[2/4] Fetching packages...</p>
+              <p>[3/4] Linking dependencies...</p>
+              <p>[4/4] Building fresh packages...</p>
+              <p>
+                <Tag borderRadius="full" variant="solid" colorScheme="green">
+                  success
+                </Tag>{" "}
+                Saved lockfile.
+              </p>
+              <p>
+                <Tag borderRadius="full" variant="solid" colorScheme="green">
+                  success
+                </Tag>{" "}
+                Saved 1 new dependency.
+              </p>
+              <p>Done in 4.69s.</p>
+              <h1>[pasindu@portfolio ~]$ </h1>
+            </Box>
           </Box>
         </Tilt>
       </Container>

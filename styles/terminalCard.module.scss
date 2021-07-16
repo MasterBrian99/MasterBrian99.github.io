@@ -2,7 +2,7 @@
   backdrop-filter: blur(50px) saturate(54%);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.2);
+  // border: 1px solid rgba(209, 213, 219, 0.2);
   height: 25rem;
   width: 40rem;
   color: #17f018;
@@ -13,10 +13,112 @@
   backdrop-filter: blur(50px) saturate(54%);
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 12px 12px 0 0;
-  border: 1px solid rgba(209, 213, 219, 0.5);
+  // border: 1px solid rgba(209, 213, 219, 0.5);
   height: 2.5rem;
 }
 
 .dot {
   padding-right: 10px;
+}
+
+.mainTerminalText {
+  user-select: none;
+}
+.installCode {
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation-delay: 2s;
+  animation: typing 8.5s steps(40, end), cursor-blink 0.75s step-end infinite;
+  user-select: none;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+    border-right: 0.15em solid #17f018;
+  }
+  25% {
+    width: 0;
+    border-right: 0.15em solid#17f018;
+  }
+
+  99% {
+    border-right: 0.15em solid #17f018;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes cursor-blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #17f018;
+  }
+}
+
+.lineCode {
+  & > p {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: show-line-code 1s steps(60, end) forwards;
+    user-select: none;
+    &:nth-child(1) {
+      color: aqua;
+      animation-delay: 9s;
+    }
+    &:nth-child(2) {
+      color: aqua;
+
+      animation-delay: 9.5s;
+    }
+    &:nth-child(3) {
+      color: aqua;
+
+      animation-delay: 10s;
+    }
+    &:nth-child(4) {
+      color: aqua;
+
+      animation-delay: 10.5s;
+    }
+    &:nth-child(5) {
+      color: aqua;
+
+      animation-delay: 11s;
+      margin-bottom: 5px;
+    }
+    &:nth-child(6) {
+      color: aqua;
+
+      animation-delay: 11.5s;
+      margin-bottom: 5px;
+    }
+    &:nth-child(7) {
+      color: aqua;
+      animation-delay: 12s;
+    }
+  }
+  h1 {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: show-line-code 1s steps(60, end) forwards;
+    animation-delay: 12.5s;
+    user-select: none;
+  }
+}
+
+@keyframes show-line-code {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
 }
