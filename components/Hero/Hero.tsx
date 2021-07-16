@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Text, Grid } from "@chakra-ui/react";
+import { Container, Box, Text, Grid, Button } from "@chakra-ui/react";
 import TerminalCard from "./components/TerminalCard";
 
 const Hero = () => {
@@ -34,8 +34,23 @@ const Hero = () => {
             color="#ffffff"
             animation="moveInButton ease-in 1s"
           >
-            A Designer That Improve The Quality Of Life Of Millions Of People.
+            A Designer That Improve The{" "}
+            <Text color="green.400" as="span">
+              {" "}
+              Quality Of Life{" "}
+            </Text>
+            Of Millions Of People.
           </Text>
+          <Box marginTop="5">
+            <Button
+              size="lg"
+              Left="1rem"
+              boxShadow="0px 0px 15px 0px rgba(19,144,235,0.72);"
+              animation="moveInButton ease-in 1s"
+            >
+              Contact Me
+            </Button>
+          </Box>
         </Box>
         <Box w="100%" h="10">
           <TerminalCard />

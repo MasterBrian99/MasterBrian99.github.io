@@ -1,21 +1,14 @@
 import React from "react";
-import {
-  Container,
-  Box,
-  Tag,
-  TagLabel,
-  TagLeftIcon,
-  TagRightIcon,
-  TagCloseButton,
-} from "@chakra-ui/react";
+import { Container, Box, Tag, Text } from "@chakra-ui/react";
 import Tilt from "react-parallax-tilt";
 import { AiFillCloseCircle, AiOutlineFullscreen } from "react-icons/ai";
 import { FaRegWindowMinimize } from "react-icons/fa";
 import styles from "../../../styles/terminalCard.module.scss";
+
 const TerminalCard = () => {
   return (
     <div>
-      <Container>
+      <Container position="relative">
         <Tilt tiltAngleYInitial={40}>
           <Box className={styles.main}>
             <Box
