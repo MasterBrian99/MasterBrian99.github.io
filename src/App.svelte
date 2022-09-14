@@ -1,19 +1,13 @@
 <script lang="ts">
-  import svelteLogo from './assets/svelte.svg'
-  import Counter from './lib/Counter.svelte'
+
 </script>
 
 <main>
- <h1 class="text-3xl font-bold underline">
-  Hello world!
-</h1>
+  <h1 class="text-3xl font-bold underline h1-header">Hello world!</h1>
 </main>
 
-
 <style lang="scss">
-
-  h1{
+  h1 {
     background-color: green;
   }
-
 </style>
