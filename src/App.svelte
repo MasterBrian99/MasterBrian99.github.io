@@ -8,3 +8,12 @@
   Hello world!
 </h1>
 </main>
+
+
+<style lang="scss">
+
+  h1{
+    background-color: green;
+  }
+
+</style>
