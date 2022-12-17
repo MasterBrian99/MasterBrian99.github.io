@@ -1,6 +1,0 @@
-<a href="https://iconscout.com/3ds/vuejs" target="_blank">VueJS 3D Illustration</a> on <a href="https://iconscout.com">IconScout</a>
-<a href="https://iconscout.com/3ds/css3" target="_blank">Css3 3D Illustration</a> by <a href="https://iconscout.com/contributors/iqonic-design">iqonic.design</a> on <a href="https://iconscout.com">IconScout</a>
-<a href="https://iconscout.com/3ds/javascript-logo" target="_blank">Javascript Logo 3D Icon</a> on <a href="https://iconscout.com">IconScout</a>
-<a href="https://iconscout.com/3ds/python-language-logo" target="_blank">Python Language Logo 3D Icon</a> on <a href="https://iconscout.com">IconScout</a>
-<a href="https://iconscout.com/3ds/java" target="_blank">Java 3D Illustration</a> on <a href="https://iconscout.com">IconScout</a>
-<a href="https://iconscout.com/3ds/api-programming" target="_blank">Api Programming 3D Illustration</a> by <a href="https://iconscout.com/contributors/iqonic-design" target="_blank">iqonic.design</a>
