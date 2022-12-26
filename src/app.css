@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-circle {
+	position: absolute;
+	z-index: -1;
+	width: 500px;
+	height: 500px;
+	opacity: 0.25;
+	-webkit-filter: blur(100px);
+	filter: blur(100px);
+	border-radius: 70%;
+}
+
+.gradient-circle-l {
+	left: -200px;
+	top: -200px;
+	right: auto;
+	bottom: auto;
+	background-image: linear-gradient(45deg, #845ec2, #af5dbb, #d15eaf, #ec64a0, #ff6f91);
+}
+
+.gradient-circle-r {
+	left: auto;
+	right: -200px;
+	top: auto;
+	bottom: 0;
+	background-image: linear-gradient(45deg, #845ec2, #0085e4, #00a2e5, #00b9cc, #00c9a7);
+}

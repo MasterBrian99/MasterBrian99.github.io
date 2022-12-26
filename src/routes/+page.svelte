@@ -1,8 +1,8 @@
 <script lang="ts">
+	import Hero from '../lib/components/Hero/Hero.svelte';
 	import '../app.css';
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
-
-<h1 class="text-3xl font-bold underline text-green-400">Hello world!</h1>
+<main class="w-full h-full">
+	<Hero />
+</main>
