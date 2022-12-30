@@ -106,7 +106,7 @@
 		<h1 class="text-8xl font-extrabold text-white">Code to bring</h1>
 		<h1 class="text-8xl font-extrabold text-white">
 			<span
-				class="effect-shine text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 font-semibold"
+				class="  effect-shine text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-700 to-emerald-500   font-extrabold"
 			>
 				ideas
 			</span> to life
