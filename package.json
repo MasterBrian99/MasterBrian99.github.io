@@ -37,6 +37,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"svelte-fa": "^3.0.3",
 		"svelte-particles": "^2.7.1",
 		"tsparticles": "^2.7.1"
 	}

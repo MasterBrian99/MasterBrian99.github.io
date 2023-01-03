@@ -3,6 +3,7 @@
 	import '../app.css';
 	import About from '$lib/components/About/About.svelte';
 	import Projects from '$lib/components/Projects/Projects.svelte';
+	import Contact from '$lib/components/Contact/Contact.svelte';
 </script>
 
 <main class="w-full h-full">
@@ -10,5 +11,7 @@
 	<div class="w-full h-full z-50">
 		<About />
 		<Projects />
+		<!-- <AboutSkill /> -->
+		<Contact />
 	</div>
 </main>
