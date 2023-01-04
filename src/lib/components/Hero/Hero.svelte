@@ -82,8 +82,7 @@
 		retina_detect: true,
 		fullScreen: false
 	};
-	let spanClass =
-		' text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-700 to-emerald-500   font-extrabold';
+
 	let letterItem = ['I', 'D', 'E', 'A', 'S', '', 'T', 'O', '', 'L', 'I', 'F', 'E'];
 	// @ts-ignore
 	let onParticlesLoaded = (event) => {
@@ -115,8 +114,10 @@
 	<div
 		class="effect-shine w-full h-full flex justify-center items-center min-h-screen flex-col waviy"
 	>
-		<h1 class="text-8xl font-extrabold text-white">Code to bring</h1>
-		<h1 class=" animate-text-hero mt-6">
+		<h1 class=" font-extrabold text-white xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl">
+			Code to bring
+		</h1>
+		<h1 class=" animate-text-hero mt-6  xl:text-8xl lg:text-7xl md:text-6xl sm:text-5xl text-3xl">
 			{#each letterItem as item, index}
 				{#if item.length == 0}
 					<span class="ml-4">&nbsp;</span>
