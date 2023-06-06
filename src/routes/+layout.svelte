@@ -1,13 +1,10 @@
 <script>
+	import Navigation from "$lib/navigation/Navigation.svelte";
     import "../app.css";
   </script>
   
+  <div class="relative flex items-center justify-center">
+    <Navigation/>
+   </div>
+
   <slot />
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <style lang="postcss">
-    :global(html) {
-      background-color: theme(colors.gray.100);
-    }
-  </style>
