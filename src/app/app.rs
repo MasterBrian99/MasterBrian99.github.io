@@ -4,7 +4,6 @@ use yew::prelude::*;
 pub fn app() -> Html {
     html! {
         <main>
-      
             <h1  class="text-green-300">{"Hello"} </h1>
         </main>
     }
