@@ -2,6 +2,7 @@ import product from "./assets/product.svg";
 import system from "./assets/system.svg";
 import ui from "./assets/ui.png";
 import web from "./assets/web.svg";
+import myAbout from "./assets/about-me.svg";
 
 const aboutList = [
   {
@@ -30,7 +31,7 @@ function App() {
           <div className="flex fixed top-0 z-20 justify-between items-center w-full h-20 bg-white border-b-2 border-black sm:flex md:flex lg:hidden xl:hidden 2xl:hidden">
             <h3 className="pl-4 text-3xl font-bold">Portfolio.</h3>
           </div>
-          <div className="hidden absolute top-8 z-20 justify-between items-center px-8 w-2/3 h-24 bg-white rounded-full border-2 border-black sm:w-10/12 md:w-10/12 lg:w-11/12 xl:w-3/4 2xl:w-2/3 sm:hidden md:hidden lg:flex xl:flex 2xl:flex">
+          <div className="hidden fixed top-8 z-20 justify-between items-center px-8 w-2/3 h-24 bg-white rounded-full border-2 border-black sm:w-10/12 md:w-10/12 lg:w-11/12 xl:w-3/4 2xl:w-2/3 sm:hidden md:hidden lg:flex xl:flex 2xl:flex">
             <div>
               <h3 className="text-4xl font-bold">Portfolio.</h3>
             </div>
@@ -83,7 +84,7 @@ function App() {
               alt=""
             />
             <img
-              className="absolute right-4 bottom-12 w-16 duration-300 transform-gpu 2xl:bottom-52 xl:bottom-40 lg:bottom-32 md:bottom-16 sm:bottom-16 2xl:right-40 xl:right-32 lg:right-20 md:right-12 sm:right-8 hover:rotate-12 2xl:w-32 xl:w-28 lg:w-20 md:w-16 sm:w-16"
+              className="absolute right-4 bottom-12 w-16 duration-300 transform-gpu 2xl:bottom-52 xl:bottom-40 lg:bottom-32 md:bottom-16 sm:bottom-16 2xl:right-20 xl:right-16 lg:right-16 md:right-12 sm:right-8 hover:rotate-12 2xl:w-32 xl:w-28 lg:w-20 md:w-16 sm:w-16"
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
             />
 
@@ -136,8 +137,150 @@ function App() {
             ></path>
           </svg>
         </div>
-        <div className="container py-40 mx-auto">
-          <div className=""></div>
+        <div className="container py-40 mx-auto w-3/4">
+          <div className="flex flex-col justify-center sm:flex-col md:flex-col lg:flex-row xl:flex-row 2xl:flex-row">
+            <div className="flex flex-1 justify-center">
+              <img src={myAbout} alt="" className="w-96" />
+            </div>
+            <div className="flex flex-col flex-1 justify-center items-center">
+              <h3 className="pb-4 text-2xl font-bold">Hello, I’m Pasindu.</h3>
+              <ul className="list-disc">
+                <li>
+                  Skilled in building enterprise-grade applications with Java,
+                  utilizing its robust libraries, frameworks, and
+                  object-oriented programming principles.
+                </li>
+                <li>
+                  Strong knowledge of frontend development, specializing in
+                  React, React ecosystem and Angular.
+                </li>
+                <li>
+                  Familiar with various frontend technologies, including HTML5,
+                  CSS3, JavaScript, TypeScript, and jQuery.
+                </li>
+                <li>
+                  Strong problem-solving and debugging skills, with a keen eye
+                  for detail and a passion for writing clean and maintainable
+                  code.
+                </li>
+                <li>
+                  Proactive learner who keeps up with the latest trends and
+                  technologies in web development, constantly seeking new
+                  challenges and opportunities to grow.
+                </li>
+                <li>
+                  Proficient in building scalable and efficient backend
+                  applications using Node.js, leveraging its event-driven
+                  architecture and extensive package ecosystem.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-full border-b-2 border-black">
+          <div className="w-full h-20">
+            <svg
+              width="100%"
+              height="100%"
+              viewBox="0 0 1000 1000"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              overflow="auto"
+              shapeRendering="auto"
+              fill="#ffffff"
+            >
+              <defs>
+                <path
+                  id="wavepath"
+                  d="M 0 2000 0 500 Q 17 300 34 500 t 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0 34 0  v1000 z"
+                />
+              </defs>
+              <g>
+                <use
+                  xlinkHref="#wavepath"
+                  y="222"
+                  className="bg-sky-400 border-t-2 border-black fill-sky-400"
+                ></use>
+              </g>
+            </svg>
+          </div>
+          <div className="flex justify-center items-center w-full h-20 bg-sky-400">
+            <div className="w-full font-serif font-bold marquee">
+              <ul className="marquee__content">
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>React</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Java</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Rust</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Go</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>FOSS</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Elixir</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Javascript</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Typescript</li>
+              </ul>
+              <ul className="marquee__content" aria-hidden="true">
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>React</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Java</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Rust</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Go</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>FOSS</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Elixir</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Javascript</li>
+                <li>
+                  <span>&#9733;</span>
+                </li>
+                <li>Typescript</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full min-h-screen max-h-full bg-orange-200">
+        <div className="flex justify-center items-center pt-20">
+          <h3 className="text-5xl font-bold">My Projects</h3>
         </div>
       </section>
     </>
