@@ -3,19 +3,13 @@
 use dioxus::prelude::*;
 use log::LevelFilter;
 
-pub mod screens;
-use screens::hero::Hero;
 #[derive(Clone, Routable, Debug, PartialEq)]
 enum Route {
     #[route("/")]
     Home {},
     #[route("/blog/:id")]
     Blog { id: i32 },
-    #[route("/game")]
-    Hero {},
-
 }
-const _TAILWIND_URL: &str = manganis::mg!(file("./assets/main.css"));
 
 fn main() {
     // Init debug
@@ -35,7 +29,6 @@ fn App() -> Element {
 fn Blog(id: i32) -> Element {
     rsx! {
         Link { to: Route::Home {}, "Go to counter" }
-        Link { to: Route::Hero {}, "Go to counter" }
         "Blog post {id}"
     }
 }
@@ -52,8 +45,7 @@ fn Home() -> Element {
             "Go to blog"
         }
         div {
-            class:"bg-slate-500",
-            h1 {class:"text-center", "High-Five counter: {count}" }
+            h1 { "High-Five counter: {count}" }
             button { onclick: move |_| count += 1, "Up high!" }
             button { onclick: move |_| count -= 1, "Down low!" }
         }
