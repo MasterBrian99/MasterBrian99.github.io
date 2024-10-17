@@ -2,7 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function AboutMe() {
   return (
-    <section className="py-16 px-4 md:px-8 lg:px-16 bg-background">
+    <section id="about" className="py-16 px-4 md:px-8 lg:px-16 bg-background">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">
           About Me
@@ -11,7 +11,7 @@ export default function AboutMe() {
           <div className="w-full lg:w-1/3 flex justify-center items-center">
             <img
               src="/undraw_undraw_undraw_undraw_undraw_website_o7n3_bucy_30uo_-1-_d6br_0qfo.svg"
-              alt="John Doe"
+              alt="svg photo"
               width={800}
               height={800}
               //   className="rounded-lg shadow-lg"
@@ -22,11 +22,12 @@ export default function AboutMe() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">Who I Am</h3>
                 <p className="text-muted-foreground">
-                  I'm John Doe, a passionate software developer with 5 years of
-                  experience in creating robust and scalable web applications.
-                  My journey in tech started with a curiosity about how things
-                  work, which led me to pursue a degree in Computer Science and
-                  dive headfirst into the world of programming.
+                  I'm Pasindu Pramodya, a passionate software developer with 3
+                  years of experience in creating robust and scalable web
+                  applications. My journey in tech started with a curiosity
+                  about how things work, which led me to pursue a degree in
+                  Software Engineering and dive headfirst into the world of
+                  programming.
                 </p>
               </CardContent>
             </Card>
@@ -34,7 +35,10 @@ export default function AboutMe() {
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-2">My Expertise</h3>
                 <ul className="list-disc list-inside text-muted-foreground">
-                  <li>Full-stack web development (React, Node.js, Express)</li>
+                  <li>
+                    Full-stack web development (React, Node.js, Express, Spring
+                    Boot)
+                  </li>
                   <li>Database design and management (SQL, MongoDB)</li>
                   <li>RESTful API development and integration</li>
                   <li>Cloud services (AWS, Google Cloud Platform)</li>

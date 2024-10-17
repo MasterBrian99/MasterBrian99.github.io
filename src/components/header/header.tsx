@@ -46,11 +46,11 @@ export default function Header() {
             className="flex items-center"
           >
             <a className="flex items-center space-x-2" href="/">
-              <span className="text-2xl font-bold">John Doe</span>
+              <span className="text-2xl font-bold">Pasindu Pramodya</span>
             </a>
           </motion.div>
           <nav className="hidden md:flex space-x-8">
-            {["About", "Projects", "Blog", "Contact"].map((item, index) => (
+            {["About", "Projects", "Contact"].map((item, index) => (
               <motion.div
                 key={item}
                 initial={{ opacity: 0, y: -20 }}
@@ -58,13 +58,41 @@ export default function Header() {
                 transition={{ duration: 0.5, delay: index * 0.1 }}
               >
                 <a
-                  href={`/${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase()}`}
                   className="text-lg font-medium hover:text-primary transition-colors"
                 >
                   {item}
                 </a>
               </motion.div>
             ))}
+            <motion.div
+              key={"Blog"}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 3 * 0.1 }}
+            >
+              <a
+                href={`https://blog.pasindupramodya.com?ref=pasindupramodya.com`}
+                target="_blank"
+                className="text-lg font-medium hover:text-primary transition-colors"
+              >
+                Blog
+              </a>
+            </motion.div>
+            <motion.div
+              key={"Socials"}
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 3 * 0.1 }}
+            >
+              <a
+                href={`https://link.pasindupramodya.com?ref=pasindupramodya.com`}
+                target="_blank"
+                className="text-lg font-medium hover:text-primary transition-colors"
+              >
+                Socials
+              </a>
+            </motion.div>
           </nav>
           <div className="flex items-center space-x-4">
             <motion.button
@@ -105,7 +133,7 @@ export default function Header() {
             transition={{ duration: 0.3 }}
             className="container mx-auto px-4 py-4 md:hidden"
           >
-            {["About", "Projects", "Blog", "Contact"].map((item, index) => (
+            {["About", "Projects", "Contact"].map((item, index) => (
               <motion.div
                 key={item}
                 initial={{ opacity: 0, x: -20 }}
@@ -113,7 +141,7 @@ export default function Header() {
                 transition={{ duration: 0.3, delay: index * 0.1 }}
               >
                 <a
-                  href={`/${item.toLowerCase()}`}
+                  href={`#${item.toLowerCase()}`}
                   className="block py-2 text-lg hover:text-primary transition-colors"
                   onClick={toggleMenu}
                 >
@@ -121,6 +149,36 @@ export default function Header() {
                 </a>
               </motion.div>
             ))}
+            <motion.div
+              key={"Blog"}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3, delay: 3 * 0.1 }}
+            >
+              <a
+                href={`https://blog.pasindupramodya.com?ref=pasindupramodya.com`}
+                target="_blank"
+                className="block py-2 text-lg hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                Blog
+              </a>
+            </motion.div>
+            <motion.div
+              key={"Socials"}
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3, delay: 3 * 0.1 }}
+            >
+              <a
+                href={`https://link.pasindupramodya.com?ref=pasindupramodya.com`}
+                target="_blank"
+                className="block py-2 text-lg hover:text-primary transition-colors"
+                onClick={toggleMenu}
+              >
+                Socials
+              </a>
+            </motion.div>
           </motion.nav>
         )}
       </AnimatePresence>

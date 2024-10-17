@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Twitter } from "lucide-react";
+import { Github, Linkedin } from "lucide-react";
 
 export default function ContactMe() {
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-secondary">
+    <section
+      id="contact"
+      className="w-full py-12 md:py-24 lg:py-32 bg-secondary"
+    >
       <div className="container px-4 md:px-6 mx-auto">
         <div className="flex flex-col items-center space-y-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
@@ -17,7 +20,7 @@ export default function ContactMe() {
           </p>
         </div>
         <div className="mx-auto max-w-3xl mt-12 space-y-8">
-          <form className="space-y-8">
+          <form className="space-y-8" method="POST" data-netlify="true">
             <div className="grid gap-4 sm:grid-cols-2">
               <div className="space-y-2">
                 <label
@@ -75,22 +78,13 @@ export default function ContactMe() {
               <span className="sr-only">GitHub</span>
             </a>
             <a
-              href="https://linkedin.com/in/yourusername"
+              href="https://www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-zinc-500 hover:text-primary"
             >
               <Linkedin className="h-8 w-8" />
               <span className="sr-only">LinkedIn</span>
-            </a>
-            <a
-              href="https://twitter.com/yourusername"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-zinc-500 hover:text-primary"
-            >
-              <Twitter className="h-8 w-8" />
-              <span className="sr-only">Twitter</span>
             </a>
           </div>
         </div>
