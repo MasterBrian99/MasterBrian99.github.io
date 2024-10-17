@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Boxes } from "../ui/background-boxes";
 
 export default function HeroSection() {
   const [currentTitleIndex, setCurrentTitleIndex] = useState(0);

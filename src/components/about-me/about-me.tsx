@@ -4,7 +4,9 @@ export default function AboutMe() {
   return (
     <section className="py-16 px-4 md:px-8 lg:px-16 bg-background">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-8 text-center">
+          About Me
+        </h2>
         <div className="flex flex-col md:flex-col lg:flex-row items-center lg:items-start gap-8">
           <div className="w-full lg:w-1/3 flex justify-center items-center">
             <img

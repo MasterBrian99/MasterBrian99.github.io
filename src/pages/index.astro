@@ -4,6 +4,9 @@ import '@/styles/globals.css'
 import { Button } from '@/components/ui/button';
 import HeroSection from '@/components/hero-section/hero-section';
 import AboutMe from '@/components/about-me/about-me';
+import ProjectSection from '@/components/project-section/project-section';
+import ContactMe from '@/components/contact-me/contact-me'
+import Footer from '@/components/footer/footer';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -12,6 +15,9 @@ import AboutMe from '@/components/about-me/about-me';
 
 <HeroSection client:load/>
 <AboutMe/>
+<ProjectSection/>
+<ContactMe/>
+<Footer/>
 	</main>
 </Layout>
 
