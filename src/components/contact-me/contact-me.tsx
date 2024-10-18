@@ -14,7 +14,7 @@ export default function ContactMe() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
             Get in Touch
           </h2>
-          <p className="mx-auto max-w-[700px] text-zinc-500 md:text-xl dark:text-zinc-400 italic">
+          <p className="mx-auto max-w-[700px] text-zinc-900 md:text-xl dark:text-zinc-100 italic">
             "Code is like humor. When you have to explain it, it's bad." – Cory
             House
           </p>
