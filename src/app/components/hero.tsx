@@ -7,7 +7,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="flex h-screen w-full justify-center items-center">
-      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4">
+      <BackgroundLines className="flex items-center justify-center w-full flex-col px-4 ">
         <h2 className="text-3xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative  font-bold  text-center ">
           Where <AuroraText>Creativity </AuroraText> Meets Code,
           <br />{" "}
