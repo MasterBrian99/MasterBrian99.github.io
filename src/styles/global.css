@@ -1,0 +1,152 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(96.22% 0.0569 95.61);
+  --secondary-background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(84.08% 0.1725 84.2);
+  --border: oklch(0% 0 0);
+  --ring: oklch(0% 0 0);
+  --overlay: oklch(0% 0 0 / 0.8);
+  --shadow: 4px 4px 0px 0px var(--border);
+  --chart-1: #ffbf00;
+  --chart-2: #0099ff;
+  --chart-3: #ff7a05;
+  --chart-4: #00d696;
+  --chart-5: #7a83ff;
+  --chart-active-dot: #000;
+}
+
+.dark {
+  --background: oklch(28.91% 0.0359 90.09);
+  --secondary-background: oklch(23.93% 0 0);
+  --foreground: oklch(92.49% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(77.7% 0.1593880864006951 84.38427202675717);
+  --border: oklch(0% 0 0);
+  --ring: oklch(100% 0 0);
+  --shadow: 4px 4px 0px 0px var(--border);
+  --chart-1: #e5ac00;
+  --chart-2: #008ae5;
+  --chart-3: #eb6d00;
+  --chart-4: #00bd84;
+  --chart-5: #7a83ff;
+  --chart-active-dot: #fff;
+}
+
+@theme inline {
+  --color-main: var(--main);
+  --color-background: var(--background);
+  --color-secondary-background: var(--secondary-background);
+  --color-foreground: var(--foreground);
+  --color-main-foreground: var(--main-foreground);
+  --color-border: var(--border);
+  --color-overlay: var(--overlay);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+
+  --spacing-boxShadowX: 4px;
+  --spacing-boxShadowY: 4px;
+  --spacing-reverseBoxShadowX: -4px;
+  --spacing-reverseBoxShadowY: -4px;
+  --radius-base: 5px;
+  --shadow-shadow: var(--shadow);
+  --font-weight-base: 500;
+  --font-weight-heading: 700;
+
+  --animate-marquee: marquee 5s linear infinite;
+  --animate-marquee2: marquee2 5s linear infinite;
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes marquee2 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply text-foreground font-base bg-background;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading;
+  }
+}
+
+/* HTML: <div class="arc-shape"></div> */
+.arc-shape {
+  --b: 20px; /* the boder thickness */
+  --a: 240deg; /* control the progression */
+
+  aspect-ratio: 1;
+  padding: var(--b);
+  border-radius: 50%;
+  background: var(--chart-3);
+  --_g: /var(--b) var(--b) no-repeat radial-gradient(50% 50%, #000 97%, #0000);
+  mask: top var(--_g),
+    calc(50% + 50% * sin(var(--a))) calc(50% - 50% * cos(var(--a))) var(--_g),
+    linear-gradient(#0000 0 0) content-box intersect,
+    conic-gradient(#000 var(--a), #0000 0);
+}
+
+/* HTML: <div class="star-shape"></div> */
+.star-shape {
+  /* width: 300px; */
+  aspect-ratio: 1;
+  background: var(--chart-1);
+  clip-path: polygon(
+    50% 0,
+    calc(50% * (1 + sin(0.4turn))) calc(50% * (1 - cos(0.4turn))),
+    calc(50% * (1 - sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 + sin(0.2turn))) calc(50% * (1 - cos(0.2turn))),
+    calc(50% * (1 - sin(0.4turn))) calc(50% * (1 - cos(0.4turn)))
+  );
+  /* or more simple
+  clip-path: polygon(50% 0,79% 90%,2% 35%,98% 35%,21% 90%); 
+   */
+}
+
+/* HTML: <div class="zig-zag-line-shape"></div> */
+.zig-zag-line-shape {
+  --a: 90deg; /* control the angle */
+  --s: 70px; /* size of the zig-zag */
+  --b: 15px; /* control the thickness */
+
+  background: var(--chart-4);
+  height: calc(var(--b) + var(--s) / (2 * tan(var(--a) / 2)));
+  /* width: 140px; */
+  --_g: var(--s) repeat-x
+    conic-gradient(
+      from calc(var(--a) / -2) at bottom,
+      #0000,
+      #000 1deg calc(var(--a) - 1deg),
+      #0000 var(--a)
+    );
+  mask: 50% calc(-1 * var(--b)) / var(--_g) exclude, 50% / var(--_g);
+}
