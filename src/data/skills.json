@@ -1,0 +1,31 @@
+{
+  "backend": [
+    { "name": "Java" },
+    { "name": "Elixir" },
+    { "name": "Rust" },
+    { "name": "Node.js" },
+    { "name": "PostgreSQL" },
+    { "name": "Redis" }
+  ],
+  "frontend": [
+    { "name": "TypeScript" },
+    { "name": "React" },
+    { "name": "Next.js" },
+    { "name": "HTML/CSS" }
+  ],
+  "tools": [
+    { "name": "Docker" },
+    { "name": "Kubernetes" },
+    { "name": "AWS" },
+    { "name": "Git" },
+    { "name": "Linux" }
+  ],
+  "concepts": [
+    { "name": "Microservices" },
+    { "name": "Distributed Systems" },
+    { "name": "System Design" },
+    { "name": "Performance Optimization" },
+    { "name": "Database Design" },
+    { "name": "API Design" }
+  ]
+}

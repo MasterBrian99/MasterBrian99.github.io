@@ -1,0 +1,21 @@
+{
+  "name": "Alex Chen",
+  "title": "System Engineer",
+  "tagline": "Building robust systems with passion and precision",
+  "heroHeadline": "Crafting Scalable Solutions",
+  "heroSubline": "System engineer passionate about distributed systems, performance optimization, and clean code",
+  "about": "I'm a system engineer with 4+ years of experience building scalable backend systems and robust infrastructure. I love diving deep into complex problems, whether it's optimizing database queries, designing microservices architecture, or implementing real-time data pipelines. When I'm not coding, you'll find me contributing to open-source projects or building new things for the world.",
+  "interests": [
+    "Distributed Systems",
+    "Performance Engineering",
+    "Open Source",
+    "System Architecture",
+    "Database Design"
+  ],
+  "contact": {
+    "email": "mail@pasindupramodya.com",
+    "github": "github.com/masterbrian99",
+    "linkedin": "www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/",
+    "twitter": "x.com/Master_br1an"
+  }
+}

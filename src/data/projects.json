@@ -1,0 +1,78 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Distributed Task Queue System",
+      "description": "Built a high-throughput task processing system using Elixir and RabbitMQ that handles over 1M tasks per day with 99.9% uptime. Implemented fault tolerance, load balancing, and real-time monitoring.",
+      "tech": ["Elixir", "Phoenix", "RabbitMQ", "PostgreSQL", "Docker"],
+      "highlights": [
+        "1M+ tasks/day",
+        "99.9% uptime",
+        "Auto-scaling",
+        "Real-time monitoring"
+      ],
+      "github": "github.com/alexchen/task-queue",
+      "live": "taskqueue.example.com"
+    },
+    {
+      "id": 2,
+      "title": "Real-time Analytics Platform",
+      "description": "Developed a real-time data analytics engine using Rust and WebAssembly for processing streaming data with sub-second latency. Features include custom aggregations, anomaly detection, and interactive dashboards.",
+      "tech": ["Rust", "WebAssembly", "WebSockets", "Redis", "React"],
+      "highlights": [
+        "Sub-second latency",
+        "WASM performance",
+        "Anomaly detection",
+        "Interactive dashboards"
+      ],
+      "github": "github.com/alexchen/analytics-platform",
+      "live": "analytics.example.com"
+    },
+    {
+      "id": 3,
+      "title": "Microservices Orchestration Framework",
+      "description": "Created a lightweight microservices orchestration framework in Java that simplifies distributed transaction management and service communication. Includes circuit breakers, retries, and distributed tracing.",
+      "tech": ["Java", "Spring Boot", "Kubernetes", "gRPC", "Jaeger"],
+      "highlights": [
+        "Distributed transactions",
+        "Circuit breakers",
+        "Auto-retry",
+        "Service mesh integration"
+      ],
+      "github": "github.com/alexchen/orchestrator"
+    },
+    {
+      "id": 4,
+      "title": "Database Performance Optimizer",
+      "description": "Built an intelligent database query optimizer that analyzes slow queries and suggests optimizations. Reduced average query time by 40% across production databases through automated indexing and query rewriting.",
+      "tech": [
+        "Java",
+        "TypeScript",
+        "PostgreSQL",
+        "Machine Learning",
+        "Docker"
+      ],
+      "highlights": [
+        "40% query time reduction",
+        "Auto-indexing",
+        "Query rewriting",
+        "ML-based optimization"
+      ],
+      "github": "github.com/alexchen/db-optimizer"
+    },
+    {
+      "id": 5,
+      "title": "Serverless API Gateway",
+      "description": "Designed and implemented a serverless API gateway with TypeScript that handles authentication, rate limiting, and request routing for microservices. Supports multiple authentication providers and custom plugins.",
+      "tech": ["TypeScript", "Node.js", "AWS Lambda", "DynamoDB", "Redis"],
+      "highlights": [
+        "Serverless architecture",
+        "Multi-provider auth",
+        "Custom plugins",
+        "Auto-scaling"
+      ],
+      "github": "github.com/alexchen/api-gateway",
+      "live": "api.example.com"
+    }
+  ]
+}

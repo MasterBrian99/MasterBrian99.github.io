@@ -1,10 +1,11 @@
 ---
+import Hero from '@/components/sections/Hero';
 import '../styles/global.css';
-// Component Imports
-import { Button } from "@/components/ui/button"
-
-// Full Astro Component Syntax:
-// https://docs.astro.build/basics/astro-components/
+import About from '@/components/sections/About';
+import Skills from '@/components/sections/Skills';
+import Projects from '@/components/sections/Projects';
+import Blog from '@/components/sections/Blog';
+import Contact from '@/components/sections/Contact';
 ---
 
 <html lang="en">
@@ -17,9 +18,11 @@ import { Button } from "@/components/ui/button"
 	</head>
 
 	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
+			<Hero />
+			<About />
+			<Skills/>
+			<Projects/>
+			<Blog/>
+			<Contact/>
 	</body>
 </html>
