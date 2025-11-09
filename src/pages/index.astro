@@ -1,28 +1,70 @@
 ---
-import Hero from '@/components/sections/Hero';
-import '../styles/global.css';
-import About from '@/components/sections/About';
-import Skills from '@/components/sections/Skills';
-import Projects from '@/components/sections/Projects';
-import Blog from '@/components/sections/Blog';
-import Contact from '@/components/sections/Contact';
+import Hero from "@/components/sections/Hero";
+import "../styles/global.css";
+import About from "@/components/sections/About";
+import Skills from "@/components/sections/Skills";
+import Projects from "@/components/sections/Projects";
+import Blog from "@/components/sections/Blog";
+import Contact from "@/components/sections/Contact";
+const pageTitle = "Pasindu Pramodaya | Software Engineer Portfolio";
+const pageDescription =
+  "I'm a software engineer with 4+ years experience building scalable backend systems. I also enjoy photography and gaming.";
+const pageUrl = "https://pasindupramodya.com";
+const pageImage = "https://pasindupramodya.com/og_image.png";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro + TailwindCSS</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
 
-	<body>
-			<Hero />
-			<About />
-			<Skills/>
-			<Projects/>
-			<Blog/>
-			<Contact/>
-	</body>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+
+    <link rel="manifest" href="/site.webmanifest" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDescription} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageUrl} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:image" content={pageImage} />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={pageUrl} />
+    <meta property="twitter:title" content={pageTitle} />
+    <meta property="twitter:description" content={pageDescription} />
+    <meta property="twitter:image" content={pageImage} />
+
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pasindu Pramodaya",
+        "url": "https://pasindupramodya.com",
+        "sameAs": [
+          "https://github.com/MasterBrian99",
+          "https://www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/"
+        ],
+        "jobTitle": "Software Engineer",
+        "image": "https://pasindupramodya.com/profile.jpg",
+        "description": "Software engineer with 4+ years experience building scalable backend systems. Enjoys photography and gaming."
+      }
+    </script>
+  </head>
+
+  <body>
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Blog />
+    <Contact />
+  </body>
 </html>

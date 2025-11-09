@@ -5,7 +5,7 @@
     { "name": "Rust" },
     { "name": "Node.js" },
     { "name": "PostgreSQL" },
-    { "name": "Redis" }
+    { "name": "Valkey" }
   ],
   "frontend": [
     { "name": "TypeScript" },

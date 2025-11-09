@@ -2,13 +2,18 @@
   "articles": [
     {
       "id": 1,
-      "title": "Building Resilient Microservices with Circuit Breakers",
-      "description": "A deep dive into implementing circuit breaker patterns in distributed systems, with practical examples using Elixir and Java.",
-      "excerpt": "Learn how to prevent cascading failures in your microservices architecture with circuit breakers, retries, and fallback mechanisms.",
-      "tags": ["Microservices", "Elixir", "Java", "System Design"],
-      "readTime": "8 min read",
-      "date": "2024-03-15",
-      "url": "/blog/circuit-breakers"
+      "title": "Manage Your Own Applications Without Local Hardware",
+      "description": "A deep dive into managing applications on cloud infrastructure to eliminate the need for local hardware.",
+      "excerpt": "Learn how to manage applications effectively on cloud platforms, reducing dependency on local hardware and improving scalability.",
+      "tags": [
+        "Cloud",
+        "Infrastructure",
+        "Application Management",
+        "Scalability"
+      ],
+      "readTime": "6 min read",
+      "date": "2025-03-31",
+      "url": "blog.pasindupramodya.com/manage-your-own-applications-without-local-hardware-part-1"
     },
     {
       "id": 2,
@@ -17,7 +22,7 @@
       "excerpt": "Discover how Rust's ownership model and zero-cost abstractions make it ideal for performance-critical systems.",
       "tags": ["Rust", "Java", "Systems Programming", "Performance"],
       "readTime": "12 min read",
-      "date": "2024-02-28",
+      "date": "2025-02-28",
       "url": "/blog/rust-for-java-devs"
     },
     {
@@ -51,12 +56,13 @@
       "url": "/blog/typescript-backend"
     }
   ],
-  "writingStyle": "I write about practical systems engineering challenges, sharing real-world solutions and lessons learned from building scalable distributed systems. My articles focus on implementation details, performance considerations, and architectural patterns that developers can apply in their daily work.",
+  "writingStyle": "I write about practical systems engineering challenges, sharing real-world solutions and self hosting. My articles focus on implementation details, performance considerations, and architectural patterns that developers can apply in their daily work.",
   "themes": [
     "Systems Architecture",
     "Performance Engineering",
-    "Language Comparisons",
+    "Cloud Infrastructure",
+    "Open Source",
     "Database Design",
-    "Distributed Systems"
+    "Self-Hosting"
   ]
 }

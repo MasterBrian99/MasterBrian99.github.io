@@ -2,77 +2,71 @@
   "projects": [
     {
       "id": 1,
-      "title": "Distributed Task Queue System",
-      "description": "Built a high-throughput task processing system using Elixir and RabbitMQ that handles over 1M tasks per day with 99.9% uptime. Implemented fault tolerance, load balancing, and real-time monitoring.",
-      "tech": ["Elixir", "Phoenix", "RabbitMQ", "PostgreSQL", "Docker"],
+      "title": "Equimix",
+      "description": "Simple proxy server and load balancer built with Rust. It efficiently distributes incoming HTTP requests across multiple backend servers to ensure high availability and optimal resource utilization.",
+      "tech": ["Rust"],
       "highlights": [
-        "1M+ tasks/day",
-        "99.9% uptime",
-        "Auto-scaling",
-        "Real-time monitoring"
+        "Efficient load balancing",
+        "High performance",
+        "Easy configuration",
+        "Robust error handling"
       ],
-      "github": "github.com/alexchen/task-queue",
-      "live": "taskqueue.example.com"
+      "github": "github.com/MasterBrian99/equimix?ref=pasindupramodya.com",
+      "live": null
     },
     {
       "id": 2,
-      "title": "Real-time Analytics Platform",
-      "description": "Developed a real-time data analytics engine using Rust and WebAssembly for processing streaming data with sub-second latency. Features include custom aggregations, anomaly detection, and interactive dashboards.",
-      "tech": ["Rust", "WebAssembly", "WebSockets", "Redis", "React"],
+      "title": "Nexquor",
+      "description": "TCP Connection based  Log-structured merge-tree database designed for high write throughput and low-latency reads. ",
+      "tech": ["Go", "TypeScript", "Deno"],
       "highlights": [
-        "Sub-second latency",
-        "WASM performance",
-        "Anomaly detection",
-        "Interactive dashboards"
+        "High write throughput",
+        "Low-latency reads",
+        "Scalable architecture",
+        "Data durability"
       ],
-      "github": "github.com/alexchen/analytics-platform",
-      "live": "analytics.example.com"
+      "live": null,
+      "github": "github.com/MasterBrian99/nexquor?ref=pasindupramodya.com"
     },
     {
       "id": 3,
-      "title": "Microservices Orchestration Framework",
-      "description": "Created a lightweight microservices orchestration framework in Java that simplifies distributed transaction management and service communication. Includes circuit breakers, retries, and distributed tracing.",
-      "tech": ["Java", "Spring Boot", "Kubernetes", "gRPC", "Jaeger"],
+      "title": "Quantum Gambit",
+      "description": "Chess engines implemented using multiple languages including Go, Rust and Zig",
+      "tech": ["Go", "Rust", "Zig"],
       "highlights": [
-        "Distributed transactions",
-        "Circuit breakers",
-        "Auto-retry",
-        "Service mesh integration"
+        "Multi-language implementation",
+        "Optimized performance",
+        "Cross-platform compatibility"
       ],
-      "github": "github.com/alexchen/orchestrator"
+      "github": "github.com/MasterBrian99/QuantumGambit?ref=pasindupramodya.com",
+      "live": null
     },
     {
       "id": 4,
-      "title": "Database Performance Optimizer",
-      "description": "Built an intelligent database query optimizer that analyzes slow queries and suggests optimizations. Reduced average query time by 40% across production databases through automated indexing and query rewriting.",
-      "tech": [
-        "Java",
-        "TypeScript",
-        "PostgreSQL",
-        "Machine Learning",
-        "Docker"
-      ],
+      "title": "Bcn-rs",
+      "description": "Blockchain and mining implementation in Rust ",
+      "tech": ["Rust"],
       "highlights": [
-        "40% query time reduction",
-        "Auto-indexing",
-        "Query rewriting",
-        "ML-based optimization"
+        "Blockchain fundamentals",
+        "Efficient mining algorithms",
+        "Secure transactions"
       ],
-      "github": "github.com/alexchen/db-optimizer"
+      "github": "github.com/MasterBrian99/bcn-rs?ref=pasindupramodya.com",
+      "live": null
     },
     {
       "id": 5,
-      "title": "Serverless API Gateway",
-      "description": "Designed and implemented a serverless API gateway with TypeScript that handles authentication, rate limiting, and request routing for microservices. Supports multiple authentication providers and custom plugins.",
-      "tech": ["TypeScript", "Node.js", "AWS Lambda", "DynamoDB", "Redis"],
+      "title": "Key Value Store",
+      "description": "A distributed key-value store with support for multiple storage backends and high availability.",
+      "tech": ["TypeScript", "PostgreSQL"],
       "highlights": [
-        "Serverless architecture",
-        "Multi-provider auth",
-        "Custom plugins",
-        "Auto-scaling"
+        "Distributed architecture",
+        "Multiple storage backends",
+        "High availability",
+        "Scalable design"
       ],
-      "github": "github.com/alexchen/api-gateway",
-      "live": "api.example.com"
+      "github": "github.com/MasterBrian99/key-value-store?ref=pasindupramodya.com",
+      "live": null
     }
   ]
 }

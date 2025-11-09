@@ -13,9 +13,9 @@ export default function Projects() {
               <Folder className="w-6 h-6" />
               <h2 className="text-4xl md:text-5xl font-black">PROJECTS</h2>
             </div>
-            <p className="text-lg font-medium max-w-2xl mx-auto mt-4">
+            {/* <p className="text-lg font-medium max-w-2xl mx-auto mt-4">
               Real-world systems I've built and shipped to production
-            </p>
+            </p> */}
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">

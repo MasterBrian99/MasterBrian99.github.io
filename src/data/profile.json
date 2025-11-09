@@ -1,10 +1,10 @@
 {
-  "name": "Alex Chen",
+  "name": "Pasindu Pramodaya",
   "title": "System Engineer",
   "tagline": "Building robust systems with passion and precision",
   "heroHeadline": "Crafting Scalable Solutions",
-  "heroSubline": "System engineer passionate about distributed systems, performance optimization, and clean code",
-  "about": "I'm a system engineer with 4+ years of experience building scalable backend systems and robust infrastructure. I love diving deep into complex problems, whether it's optimizing database queries, designing microservices architecture, or implementing real-time data pipelines. When I'm not coding, you'll find me contributing to open-source projects or building new things for the world.",
+  "heroSubline": "System engineer passionate about system engineering, performance optimization, and clean code",
+  "about": "I'm a system engineer with 4+ years of experience building scalable backend systems and robust infrastructure. I thrive on tackling complex problems—whether it's optimizing databases, designing microservices, or implementing real-time data pipelines. Outside of coding, I love immersing myself in games, capturing moments through photography, and contributing to open-source projects that make a difference.",
   "interests": [
     "Distributed Systems",
     "Performance Engineering",
