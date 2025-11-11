@@ -75,7 +75,7 @@ export default function DebugLog() {
 
           <div className="mt-12 bg-black border-4 border-black p-6 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
             <p className="text-white font-bold text-center text-lg">
-              Updates refresh hourly • Last sync: {debuglogData.lastSync}
+              Updates refresh daily • Last sync: {debuglogData.lastSync}
             </p>
           </div>
         </div>
