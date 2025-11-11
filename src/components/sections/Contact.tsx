@@ -45,15 +45,15 @@ export default function Contact() {
             <p className="text-lg font-medium mb-8 leading-relaxed max-w-2xl mx-auto">
               I'm always interested in hearing about new projects,
               opportunities, and collaborations. Whether you're looking for a
-              system engineer or just want to chat about distributed systems,
-              feel free to reach out.
+              system engineer or just want to chat about tech, feel free to
+              reach out.
             </p>
 
             <a
               href={`mailto:${profileData.contact.email}`}
               className="inline-block"
             >
-              <Button className="px-8 py-6 text-lg font-bold bg-black text-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
+              <Button className="px-8 py-6  sm:text-lg text-xs  font-bold bg-black text-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
                 <Mail className="w-5 h-5 mr-2" />
                 {profileData.contact.email}
               </Button>
