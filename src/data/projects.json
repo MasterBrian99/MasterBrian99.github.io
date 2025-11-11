@@ -1,0 +1,72 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Equimix",
+      "description": "Simple proxy server and load balancer built with Rust. It efficiently distributes incoming HTTP requests across multiple backend servers to ensure high availability and optimal resource utilization.",
+      "tech": ["Rust"],
+      "highlights": [
+        "Efficient load balancing",
+        "High performance",
+        "Easy configuration",
+        "Robust error handling"
+      ],
+      "github": "github.com/MasterBrian99/equimix?ref=pasindupramodya.com",
+      "live": null
+    },
+    {
+      "id": 2,
+      "title": "Nexquor",
+      "description": "TCP Connection based  Log-structured merge-tree database designed for high write throughput and low-latency reads. ",
+      "tech": ["Go", "TypeScript", "Deno"],
+      "highlights": [
+        "High write throughput",
+        "Low-latency reads",
+        "Scalable architecture",
+        "Data durability"
+      ],
+      "live": null,
+      "github": "github.com/MasterBrian99/nexquor?ref=pasindupramodya.com"
+    },
+    {
+      "id": 3,
+      "title": "Quantum Gambit",
+      "description": "Chess engines implemented using multiple languages including Go, Rust and Zig",
+      "tech": ["Go", "Rust", "Zig"],
+      "highlights": [
+        "Multi-language implementation",
+        "Optimized performance",
+        "Cross-platform compatibility"
+      ],
+      "github": "github.com/MasterBrian99/QuantumGambit?ref=pasindupramodya.com",
+      "live": null
+    },
+    {
+      "id": 4,
+      "title": "Bcn-rs",
+      "description": "Blockchain and mining implementation in Rust ",
+      "tech": ["Rust"],
+      "highlights": [
+        "Blockchain fundamentals",
+        "Efficient mining algorithms",
+        "Secure transactions"
+      ],
+      "github": "github.com/MasterBrian99/bcn-rs?ref=pasindupramodya.com",
+      "live": null
+    },
+    {
+      "id": 5,
+      "title": "Key Value Store",
+      "description": "A distributed key-value store with support for multiple storage backends and high availability.",
+      "tech": ["TypeScript", "PostgreSQL"],
+      "highlights": [
+        "Distributed architecture",
+        "Multiple storage backends",
+        "High availability",
+        "Scalable design"
+      ],
+      "github": "github.com/MasterBrian99/key-val-store?ref=pasindupramodya.com",
+      "live": null
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Pasindu Pramodaya",
+  "title": "System Engineer",
+  "tagline": "Building robust systems with passion and precision",
+  "heroHeadline": "Crafting Scalable Solutions",
+  "heroSubline": "System engineer passionate about system engineering, performance optimization, and clean code",
+  "about": "I'm a system engineer with 4+ years of experience building scalable backend systems and robust infrastructure. I thrive on tackling complex problems—whether it's optimizing databases, designing microservices, or implementing real-time data pipelines. Outside of coding, I love immersing myself in games, capturing moments through photography, and contributing to open-source projects that make a difference.",
+  "interests": [
+    "Distributed Systems",
+    "Performance Engineering",
+    "Open Source",
+    "System Architecture",
+    "Database Design"
+  ],
+  "contact": {
+    "email": "mail@pasindupramodya.com",
+    "github": "github.com/masterbrian99",
+    "linkedin": "www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/",
+    "twitter": "x.com/Master_br1an"
+  }
+}
