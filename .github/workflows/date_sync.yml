@@ -4,11 +4,13 @@ on:
   schedule:
     # Runs at 5:00 AM UTC every day
     - cron: '0 5 * * *'
-  workflow_dispatch: 
+  workflow_dispatch: # Allows manual trigger
 
 jobs:
   update-date:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     
     steps:
       - name: Checkout repository
