@@ -1,0 +1,37 @@
+name: Update Last Sync Date
+
+on:
+  schedule:
+    # Runs at 5:00 AM UTC every day
+    - cron: '0 5 * * *'
+  workflow_dispatch: 
+
+jobs:
+  update-date:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Update date in JSON file
+        run: |
+          # Get current date in "MMM DD, YYYY" format
+          CURRENT_DATE=$(date +'%b %-d, %Y')
+          
+          # Path to your JSON file
+          JSON_FILE="src/data/debuglog.json"
+          
+          # Update the lastSync field using sed
+          sed -i "s/\"lastSync\": \"[^\"]*\"/\"lastSync\": \"$CURRENT_DATE\"/" "$JSON_FILE"
+          
+          echo "Updated lastSync to: $CURRENT_DATE"
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add .
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update lastSync date to $(date +'%b %-d, %Y')" && git push)
