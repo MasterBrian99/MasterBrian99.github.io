@@ -6,9 +6,11 @@
       "description": "A Rust-based chess engine implementing the Universal Chess Interface (UCI) protocol with advanced search algorithms and bitboard-based performance optimizations.",
       "tech": ["Rust"],
       "highlights": [
-        "Multi-language implementation",
-        "Optimized performance",
-        "Cross-platform compatibility"
+       "UCI protocol implementation",
+       "Advanced search algorithms",
+       "Bitboard optimizations",
+       "Chess",
+       "Chess Engine"
       ],
       "github": "github.com/MasterBrian99/clockwork",
       "live": null
