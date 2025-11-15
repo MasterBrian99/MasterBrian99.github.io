@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs at 5:00 AM UTC every day
     - cron: '0 5 * * *'
-  workflow_dispatch: # Allows manual trigger
+  workflow_dispatch: 
 
 jobs:
   update-date:
@@ -37,3 +37,11 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add .
           git diff --quiet && git diff --staged --quiet || (git commit -m "Update lastSync date to $(date +'%b %-d, %Y')" && git push)
+
+      
+      - name: Trigger deploy workflow
+        if: success()
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          event-type: date-updated
