@@ -2,18 +2,18 @@
   "projects": [
     {
       "id": 1,
-      "title": "Equimix",
-      "description": "Simple proxy server and load balancer built with Rust. It efficiently distributes incoming HTTP requests across multiple backend servers to ensure high availability and optimal resource utilization.",
+      "title": "Clockwork",
+      "description": "A Rust-based chess engine implementing the Universal Chess Interface (UCI) protocol with advanced search algorithms and bitboard-based performance optimizations.",
       "tech": ["Rust"],
       "highlights": [
-        "Efficient load balancing",
-        "High performance",
-        "Easy configuration",
-        "Robust error handling"
+        "Multi-language implementation",
+        "Optimized performance",
+        "Cross-platform compatibility"
       ],
-      "github": "github.com/MasterBrian99/equimix?ref=pasindupramodya.com",
+      "github": "github.com/MasterBrian99/clockwork",
       "live": null
     },
+
     {
       "id": 2,
       "title": "Nexquor",
@@ -30,15 +30,16 @@
     },
     {
       "id": 3,
-      "title": "Quantum Gambit",
-      "description": "Chess engines implemented using multiple languages including Go, Rust and Zig",
-      "tech": ["Go", "Rust", "Zig"],
+      "title": "Equimix",
+      "description": "Simple proxy server and load balancer built with Rust. It efficiently distributes incoming HTTP requests across multiple backend servers to ensure high availability and optimal resource utilization.",
+      "tech": ["Rust"],
       "highlights": [
-        "Multi-language implementation",
-        "Optimized performance",
-        "Cross-platform compatibility"
+        "Efficient load balancing",
+        "High performance",
+        "Easy configuration",
+        "Robust error handling"
       ],
-      "github": "github.com/MasterBrian99/QuantumGambit?ref=pasindupramodya.com",
+      "github": "github.com/MasterBrian99/equimix?ref=pasindupramodya.com",
       "live": null
     },
     {
