@@ -8,7 +8,7 @@ export default function About() {
         <div className="max-w-5xl mx-auto">
           <div className="mb-12">
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-cyan-400 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 mb-4">
-              <User className="w-6 h-6" />
+              <User className="w-6 h-6" aria-hidden="true" />
               <h2 className="text-3xl md:text-5xl font-black">ABOUT ME</h2>
             </div>
           </div>
@@ -28,7 +28,7 @@ export default function About() {
 
             <div className="bg-pink-400 border-4 border-black p-8 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)]">
               <h3 className="text-2xl font-black mb-4 flex items-center gap-2">
-                <Heart className="w-7 h-7" fill="black" />
+                <Heart className="w-7 h-7" fill="black" aria-hidden="true" />
                 Interests
               </h3>
               <div className="flex flex-wrap gap-3">

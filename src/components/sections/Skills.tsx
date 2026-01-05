@@ -36,7 +36,7 @@ export default function Skills() {
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center">
             <div className="inline-flex items-center gap-3 px-8 py-4 bg-black text-orange-300 border-4 border-black shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 mb-4">
-              <Code className="w-8 h-8" />
+              <Code className="w-8 h-8" aria-hidden="true" />
               <h2 className="text-3xl md:text-5xl font-black">SKILLS</h2>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Skills() {
                 >
                   <div className="flex items-center gap-4 mb-8">
                     <div className="w-16 h-16 bg-black text-white flex items-center justify-center border-3 border-black transform -rotate-12">
-                      <Icon className="w-8 h-8" />
+                      <Icon className="w-8 h-8" aria-hidden="true" />
                     </div>
                     <h3 className="text-2xl md:text-3xl font-black">
                       {category.title.toUpperCase()}

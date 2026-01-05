@@ -5,7 +5,7 @@
       "time": "2:30 PM",
       "category": "music",
       "title": "Currently Listening",
-      "content": "Story of My Life by One Direction",
+      "content": "Paradise - Coldplay",
       "icon": "music"
     },
     {
@@ -21,7 +21,7 @@
       "time": "10:45 AM",
       "category": "work",
       "title": "Currently Working On",
-      "content": "Optimizing PostgreSQL query performance for high-throughput systems",
+      "content": "New Database System",
       "icon": "code"
     },
     {

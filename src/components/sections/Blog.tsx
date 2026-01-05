@@ -37,13 +37,23 @@ export default function Blog() {
               const colors = ["bg-cyan-400", "bg-pink-400", "bg-yellow-300"];
               const bgColor = colors[idx % colors.length];
 
+              const articleUrl = article.url.startsWith("http")
+                ? article.url
+                : article.url.startsWith("/")
+                ? article.url
+                : `https://${article.url}`;
+
               return (
-                <div
+                <a
                   key={article.id}
-                  className={`${bgColor} border-4 border-black p-6 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all cursor-pointer`}
+                  href={articleUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Read article: ${article.title}`}
+                  className={`${bgColor} border-4 border-black p-6 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] hover:shadow-[16px_16px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-1 transition-all block`}
                 >
                   <div className="flex items-center gap-2 mb-3">
-                    <Clock className="w-4 h-4" />
+                    <Clock className="w-4 h-4" aria-hidden="true" />
                     <span className="text-sm font-bold">
                       {article.readTime}
                     </span>
@@ -65,12 +75,12 @@ export default function Blog() {
                         key={tagIdx}
                         className="flex items-center gap-1 px-2 py-1 bg-white border-2 border-black text-xs font-bold"
                       >
-                        <Tag className="w-3 h-3" />
+                        <Tag className="w-3 h-3" aria-hidden="true" />
                         {tag}
                       </span>
                     ))}
                   </div>
-                </div>
+                </a>
               );
             })}
           </div>

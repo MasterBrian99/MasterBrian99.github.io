@@ -16,6 +16,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl sm:text-6xl font-black mb-6 leading-tight">
+            <span className="sr-only">{profileData.name} - </span>
             <span className="inline-block bg-white border-4 border-black px-6 py-2 shadow-[12px_12px_0px_0px_rgba(0,0,0,1)] transform rotate-1">
               {profileData.heroHeadline.split(" ")[0]}
             </span>
@@ -31,19 +32,19 @@ export default function Hero() {
 
           <div className="flex flex-wrap gap-4 justify-center items-center mb-12">
             <div className="flex items-center gap-2 px-4 py-2 bg-pink-400 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-              <Code2 className="w-5 h-5" />
+              <Code2 className="w-5 h-5" aria-hidden="true" />
               <span className="font-bold">Java</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-lime-400 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-              <Terminal className="w-5 h-5" />
+              <Terminal className="w-5 h-5" aria-hidden="true" />
               <span className="font-bold">Elixir</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-orange-400 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-              <Zap className="w-5 h-5" />
+              <Zap className="w-5 h-5" aria-hidden="true" />
               <span className="font-bold">Rust</span>
             </div>
             <div className="flex items-center gap-2 px-4 py-2 bg-cyan-400 border-4 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
-              <Code2 className="w-5 h-5" />
+              <Code2 className="w-5 h-5" aria-hidden="true" />
               <span className="font-bold">TypeScript</span>
             </div>
           </div>
