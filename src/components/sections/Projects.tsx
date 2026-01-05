@@ -44,9 +44,10 @@ export default function Projects() {
                           href={`https://${project.github}`}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`View ${project.title} source code on GitHub`}
                           className="w-10 h-10 bg-white border-3 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors"
                         >
-                          <Github className="w-5 h-5" />
+                          <Github className="w-5 h-5" aria-hidden="true" />
                         </a>
                       )}
                       {project.live && (
@@ -54,9 +55,13 @@ export default function Projects() {
                           href={`https://${project.live}`}
                           target="_blank"
                           rel="noopener noreferrer"
+                          aria-label={`Visit ${project.title} live site`}
                           className="w-10 h-10 bg-white border-3 border-black flex items-center justify-center hover:bg-black hover:text-white transition-colors"
                         >
-                          <ExternalLink className="w-5 h-5" />
+                          <ExternalLink
+                            className="w-5 h-5"
+                            aria-hidden="true"
+                          />
                         </a>
                       )}
                     </div>

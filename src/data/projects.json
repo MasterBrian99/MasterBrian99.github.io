@@ -6,30 +6,30 @@
       "description": "A Rust-based chess engine implementing the Universal Chess Interface (UCI) protocol with advanced search algorithms and bitboard-based performance optimizations.",
       "tech": ["Rust"],
       "highlights": [
-       "UCI protocol implementation",
-       "Advanced search algorithms",
-       "Bitboard optimizations",
-       "Chess",
-       "Chess Engine"
+        "UCI protocol implementation",
+        "Advanced search algorithms",
+        "Bitboard optimizations",
+        "Chess",
+        "Chess Engine"
       ],
       "github": "github.com/MasterBrian99/clockwork",
       "live": null
     },
-
     {
       "id": 2,
-      "title": "Nexquor",
-      "description": "TCP Connection based  Log-structured merge-tree database designed for high write throughput and low-latency reads. ",
-      "tech": ["Go", "TypeScript", "Deno"],
+      "title": "Loreal - Experimental Functional Language",
+      "description": "Experimental functional language for resource management via hardware-aware loop specialization ",
+      "tech": ["Rust", "LLVM", "LLVM IR", "LLVM Pass", "LLVM Loop"],
       "highlights": [
-        "High write throughput",
-        "Low-latency reads",
-        "Scalable architecture",
-        "Data durability"
+        "LLVM Pass",
+        "Functional Language",
+        "Resource Management",
+        "Hardware-Aware Loop Specialization"
       ],
-      "live": null,
-      "github": "github.com/MasterBrian99/nexquor?ref=pasindupramodya.com"
+      "github": "github.com/MasterBrian99/loreal",
+      "live": "github.com/MasterBrian99/loreal/blob/master/Research_Paper.md"
     },
+
     {
       "id": 3,
       "title": "Equimix",
@@ -59,17 +59,17 @@
     },
     {
       "id": 5,
-      "title": "Key Value Store",
-      "description": "A distributed key-value store with support for multiple storage backends and high availability.",
-      "tech": ["TypeScript", "PostgreSQL"],
+      "title": "Nexquor",
+      "description": "TCP Connection based  Log-structured merge-tree database designed for high write throughput and low-latency reads. ",
+      "tech": ["Go", "TypeScript", "Deno"],
       "highlights": [
-        "Distributed architecture",
-        "Multiple storage backends",
-        "High availability",
-        "Scalable design"
+        "High write throughput",
+        "Low-latency reads",
+        "Scalable architecture",
+        "Data durability"
       ],
-      "github": "github.com/MasterBrian99/key-val-store?ref=pasindupramodya.com",
-      "live": null
+      "live": null,
+      "github": "github.com/MasterBrian99/nexquor?ref=pasindupramodya.com"
     }
   ]
 }

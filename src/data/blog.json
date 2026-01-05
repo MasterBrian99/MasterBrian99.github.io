@@ -13,47 +13,17 @@
       ],
       "readTime": "6 min read",
       "date": "2025-03-31",
-      "url": "blog.pasindupramodya.com/manage-your-own-applications-without-local-hardware-part-1"
+      "url": "blog.pasindupramodya.com/manage-your-own-applications-without-local-hardware-part-1?ref=pasindupramodya.com"
     },
     {
       "id": 2,
-      "title": "Rust for Systems Programming: A Java Developer's Perspective",
-      "description": "Comparing Rust's memory safety and performance guarantees with Java's garbage collection in systems programming contexts.",
-      "excerpt": "Discover how Rust's ownership model and zero-cost abstractions make it ideal for performance-critical systems.",
-      "tags": ["Rust", "Java", "Systems Programming", "Performance"],
-      "readTime": "12 min read",
-      "date": "2025-02-28",
-      "url": "/blog/rust-for-java-devs"
-    },
-    {
-      "id": 3,
-      "title": "Optimizing Database Performance at Scale",
-      "description": "Practical techniques for database optimization that reduced query times by 40% in production systems.",
-      "excerpt": "From indexing strategies to query rewriting, learn the battle-tested approaches for database performance optimization.",
-      "tags": ["Database", "PostgreSQL", "Performance", "Optimization"],
-      "readTime": "10 min read",
-      "date": "2024-02-10",
-      "url": "/blog/database-optimization"
-    },
-    {
-      "id": 4,
-      "title": "Real-time Data Processing with Elixir GenStage",
-      "description": "Implementing back-pressure-aware data pipelines using Elixir's GenStage for high-throughput systems.",
-      "excerpt": "Explore how GenStage enables building scalable, fault-tolerant data processing pipelines with automatic flow control.",
-      "tags": ["Elixir", "GenStage", "Real-time", "Data Processing"],
-      "readTime": "9 min read",
-      "date": "2024-01-25",
-      "url": "/blog/genstage-pipelines"
-    },
-    {
-      "id": 5,
-      "title": "TypeScript in Backend Development: Best Practices",
-      "description": "Leveraging TypeScript's type system for building robust Node.js applications and APIs.",
-      "excerpt": "From strict typing to advanced patterns, learn how to use TypeScript effectively in backend development.",
-      "tags": ["TypeScript", "Node.js", "Backend", "Best Practices"],
-      "readTime": "7 min read",
-      "date": "2024-01-10",
-      "url": "/blog/typescript-backend"
+      "title": "Building with PostgreSQL - The Slotted Counter Pattern",
+      "description": "PostgreSQL Slotted Counter Pattern",
+      "excerpt": "Learn how to use the Slotted Counter Pattern to build a high-performance database system.",
+      "tags": ["PostgreSQL", "Slotted Counter Pattern", "Performance"],
+      "readTime": "5 min read",
+      "date": "2025-12-16",
+      "url": "blog.wavezync.com/building-with-postgresql-the-slotted-counter-pattern?ref=pasindupramodya.com"
     }
   ],
   "writingStyle": "I write about practical systems engineering challenges, sharing real-world solutions and self hosting. My articles focus on implementation details, performance considerations, and architectural patterns that developers can apply in their daily work.",

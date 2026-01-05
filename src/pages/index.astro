@@ -7,6 +7,7 @@ import Projects from "@/components/sections/Projects";
 import Blog from "@/components/sections/Blog";
 import Contact from "@/components/sections/Contact";
 import DebugLog from "@/components/sections/DebugLog";
+import SkipLink from "@/components/SkipLink.astro";
 const pageTitle =
   "Pasindu Pramodaya | Backend & Fullstack Developer Portfolio | Projects & Skills";
 const pageDescription =
@@ -48,27 +49,56 @@ const pageImage = "https://pasindupramodya.com/og_image.png";
     <script type="application/ld+json" is:inline>
       {
         "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Pasindu Pramodaya",
-        "url": "https://pasindupramodya.com",
-        "sameAs": [
-          "https://github.com/MasterBrian99",
-          "https://www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/"
-        ],
-        "jobTitle": "Software Engineer",
-        "image": "https://pasindupramodya.com/profile.jpg",
-        "description": "Software engineer with 4+ years experience building scalable backend systems. Enjoys photography and gaming."
+        "@graph": [
+          {
+            "@type": "WebSite",
+            "@id": "https://pasindupramodya.com/#website",
+            "url": "https://pasindupramodya.com",
+            "name": "Pasindu Pramodaya Portfolio",
+            "description": "Portfolio of Pasindu Pramodaya, a software engineer specializing in backend development and distributed systems.",
+            "publisher": {
+              "@id": "https://pasindupramodya.com/#person"
+            }
+          },
+          {
+            "@type": "ProfilePage",
+            "@id": "https://pasindupramodya.com/#profilepage",
+            "url": "https://pasindupramodya.com",
+            "name": "Pasindu Pramodaya | Software Engineer Portfolio",
+            "mainEntity": {
+              "@id": "https://pasindupramodya.com/#person"
+            }
+          },
+          {
+            "@type": "Person",
+            "@id": "https://pasindupramodya.com/#person",
+            "name": "Pasindu Pramodaya",
+            "url": "https://pasindupramodya.com",
+            "sameAs": [
+              "https://github.com/MasterBrian99",
+              "https://www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/",
+              "https://x.com/Master_br1an"
+            ],
+            "jobTitle": "Software Engineer",
+            "image": "https://pasindupramodya.com/og_image.png",
+            "description": "Software engineer with 4+ years experience building scalable backend systems. Enjoys photography and gaming.",
+            "knowsAbout": ["Java", "Rust", "Elixir", "TypeScript", "Distributed Systems", "Database Design", "Microservices"]
+          }
+        ]
       }
     </script>
   </head>
 
   <body>
-    <Hero />
-    <About />
-    <Skills />
-    <Projects />
-    <Blog />
-    <DebugLog />
-    <Contact />
+    <SkipLink targetId="main-content" />
+    <main id="main-content">
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Blog />
+      <DebugLog />
+      <Contact />
+    </main>
   </body>
 </html>

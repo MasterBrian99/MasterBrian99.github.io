@@ -33,7 +33,7 @@ export default function Contact() {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
             <div className="inline-flex items-center gap-3 px-6 py-3 bg-black text-yellow-300 border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] transform -rotate-1 mb-4">
-              <Send className="w-6 h-6" />
+              <Send className="w-6 h-6" aria-hidden="true" />
               <h2 className="text-4xl md:text-5xl font-black">GET IN TOUCH</h2>
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function Contact() {
               className="inline-block"
             >
               <Button className="px-8 py-6  sm:text-lg text-xs  font-bold bg-black text-white border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all">
-                <Mail className="w-5 h-5 mr-2" />
+                <Mail className="w-5 h-5 mr-2" aria-hidden="true" />
                 {profileData.contact.email}
               </Button>
             </a>
@@ -67,9 +67,10 @@ export default function Contact() {
                 href={social.url}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label={`Visit my ${social.label} profile`}
                 className={`flex items-center gap-3 px-6 py-4 ${social.color} border-4 border-black shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-1 hover:translate-y-1 transition-all`}
               >
-                <social.icon className="w-6 h-6" />
+                <social.icon className="w-6 h-6" aria-hidden="true" />
                 <span className="font-bold text-lg">{social.label}</span>
               </a>
             ))}
