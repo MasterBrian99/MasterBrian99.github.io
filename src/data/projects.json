@@ -1,0 +1,75 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Clockwork",
+      "description": "A Rust-based chess engine implementing the Universal Chess Interface (UCI) protocol with advanced search algorithms and bitboard-based performance optimizations.",
+      "tech": ["Rust"],
+      "highlights": [
+        "UCI protocol implementation",
+        "Advanced search algorithms",
+        "Bitboard optimizations",
+        "Chess",
+        "Chess Engine"
+      ],
+      "github": "github.com/MasterBrian99/clockwork",
+      "live": null
+    },
+    {
+      "id": 2,
+      "title": "Loreal - Experimental Functional Language",
+      "description": "Experimental functional language for resource management via hardware-aware loop specialization ",
+      "tech": ["Rust", "LLVM", "LLVM IR", "LLVM Pass", "LLVM Loop"],
+      "highlights": [
+        "LLVM Pass",
+        "Functional Language",
+        "Resource Management",
+        "Hardware-Aware Loop Specialization"
+      ],
+      "github": "github.com/MasterBrian99/loreal",
+      "live": "github.com/MasterBrian99/loreal/blob/master/Research_Paper.md"
+    },
+
+    {
+      "id": 3,
+      "title": "Equimix",
+      "description": "Simple proxy server and load balancer built with Rust. It efficiently distributes incoming HTTP requests across multiple backend servers to ensure high availability and optimal resource utilization.",
+      "tech": ["Rust"],
+      "highlights": [
+        "Efficient load balancing",
+        "High performance",
+        "Easy configuration",
+        "Robust error handling"
+      ],
+      "github": "github.com/MasterBrian99/equimix?ref=pasindupramodya.com",
+      "live": null
+    },
+    {
+      "id": 4,
+      "title": "Bcn-rs",
+      "description": "Blockchain and mining implementation in Rust ",
+      "tech": ["Rust"],
+      "highlights": [
+        "Blockchain fundamentals",
+        "Efficient mining algorithms",
+        "Secure transactions"
+      ],
+      "github": "github.com/MasterBrian99/bcn-rs?ref=pasindupramodya.com",
+      "live": null
+    },
+    {
+      "id": 5,
+      "title": "Nexquor",
+      "description": "TCP Connection based  Log-structured merge-tree database designed for high write throughput and low-latency reads. ",
+      "tech": ["Go", "TypeScript", "Deno"],
+      "highlights": [
+        "High write throughput",
+        "Low-latency reads",
+        "Scalable architecture",
+        "Data durability"
+      ],
+      "live": null,
+      "github": "github.com/MasterBrian99/nexquor?ref=pasindupramodya.com"
+    }
+  ]
+}
