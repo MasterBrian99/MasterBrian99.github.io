@@ -1,31 +1,32 @@
 {
   "backend": [
+    { "name": "NestJS" },
+    { "name": "Spring Boot" },
     { "name": "Java" },
-    { "name": "Elixir" },
-    { "name": "Rust" },
     { "name": "Node.js" },
-    { "name": "PostgreSQL" },
-    { "name": "Valkey" }
+    { "name": "Go" },
+    { "name": "Elixir/Erlang" },
+    { "name": "Rust" }
   ],
   "frontend": [
-    { "name": "TypeScript" },
-    { "name": "React" },
-    { "name": "Next.js" },
-    { "name": "HTML/CSS" }
+    { "name": "React.js" },
+    { "name": "JavaScript/TypeScript" },
+    { "name": "Redux" }
   ],
   "tools": [
     { "name": "Docker" },
     { "name": "Kubernetes" },
+    { "name": "GitHub Actions" },
+    { "name": "GitLab CI" },
     { "name": "AWS" },
-    { "name": "Git" },
+    { "name": "Google Cloud" },
+    { "name": "Azure" },
     { "name": "Linux" }
   ],
   "concepts": [
-    { "name": "Microservices" },
-    { "name": "Distributed Systems" },
-    { "name": "System Design" },
-    { "name": "Performance Optimization" },
-    { "name": "Database Design" },
-    { "name": "API Design" }
+    { "name": "Performance Tuning" },
+    { "name": "Server Management" },
+    { "name": "CI/CD Pipelines" },
+    { "name": "Microservices" }
   ]
 }

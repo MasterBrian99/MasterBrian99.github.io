@@ -1,0 +1,177 @@
+---
+/* DebugLog.astro — Terminal-like feed of personal updates */
+import debugData from '../data/debuglog.json';
+
+/* Map icon names to emoji/symbols for a utilitarian look */
+const iconMap: Record<string, string> = {
+  music: '♫',
+  video: '▶',
+  code: '{}',
+  book: '📖',
+  check: '✓',
+  zap: '⚡',
+};
+
+const categoryColors: Record<string, string> = {
+  music: 'var(--color-purple)',
+  video: 'var(--color-coral)',
+  work: 'var(--color-blue)',
+  reading: 'var(--color-yellow)',
+  learning: 'var(--color-green)',
+};
+
+function getColor(category: string) {
+  return categoryColors[category] || 'var(--color-text)';
+}
+
+function getIcon(icon: string) {
+  return iconMap[icon] || '•';
+}
+---
+
+<section id="debuglog" class="neo-section">
+  <div class="neo-container">
+    <h2 class="section-heading">Debug Log</h2>
+
+    <div class="debuglog-wrapper neo-card" style="padding: 0; overflow: hidden;">
+      <!-- Terminal header -->
+      <div class="terminal-header">
+        <div class="terminal-dots">
+          <span class="dot" style="background: var(--color-coral);"></span>
+          <span class="dot" style="background: var(--color-yellow);"></span>
+          <span class="dot" style="background: var(--color-green);"></span>
+        </div>
+        <span class="terminal-title">debug.log — last sync: {debugData.lastSync}</span>
+      </div>
+
+      <!-- Log entries -->
+      <div class="log-entries">
+        {debugData.updates.map((update) => (
+            <div class="log-entry">
+              <span class="log-time">{update.time}</span>
+              <span class="log-icon" style={`background: ${getColor(update.category)};`}>
+                {getIcon(update.icon)}
+              </span>
+              <div class="log-body">
+                <span class="log-title" style={`color: ${getColor(update.category)};`}>{update.title}</span>
+                <span class="log-content">{update.content}</span>
+              </div>
+            </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .debuglog-wrapper {
+    max-width: 700px;
+  }
+
+  .terminal-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--color-text);
+    border-bottom: var(--border-w) solid var(--color-border);
+  }
+
+  .terminal-dots {
+    display: flex;
+    gap: 6px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border: 2px solid var(--color-border);
+  }
+
+  .terminal-title {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--color-bg);
+    opacity: 0.7;
+  }
+
+  .log-entries {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .log-entry {
+    display: grid;
+    grid-template-columns: 70px 40px 1fr;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1.25rem;
+    border-bottom: 2px solid var(--color-border);
+    transition: background 80ms ease-out;
+  }
+
+  .log-entry:last-child {
+    border-bottom: none;
+  }
+
+  .log-entry:hover {
+    background: var(--color-bg-alt);
+  }
+
+  .log-time {
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-weight: 500;
+  }
+
+  .log-icon {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 2px solid var(--color-border);
+    box-shadow: 2px 2px 0 var(--color-border);
+  }
+
+  .log-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .log-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+
+  .log-content {
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+  }
+
+  @media (max-width: 640px) {
+    .log-entry {
+      grid-template-columns: 50px 32px 1fr;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+    }
+
+    .log-time {
+      font-size: 0.65rem;
+    }
+
+    .log-icon {
+      width: 24px;
+      height: 24px;
+      font-size: 0.75rem;
+    }
+  }
+</style>
