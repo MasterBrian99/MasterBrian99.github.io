@@ -1,0 +1,36 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": "BSc (Hons) Software Engineering",
+      "institution": "International College of Business and Technology",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "2023",
+      "endDate": "Present",
+      "grade": "",
+      "activities": [
+        "Advanced Programming",
+        "System Analysis and Design",
+        "Machine Learning",
+        "Software Testing"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Graduate Diploma in Software Engineering",
+      "institution": "Institute of Software Engineering (IJSE)",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "2020",
+      "endDate": "2022",
+      "grade": "",
+      "activities": [
+        "Software Design and Architecture",
+        "Database Systems",
+        "Web Development",
+        "Cloud Computing",
+        "Data Structures and Algorithms",
+        "DevOps Practices"
+      ]
+    }
+  ]
+}

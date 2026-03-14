@@ -1,23 +1,131 @@
+---
+/* Layout.astro — Main document shell with comprehensive SEO, fonts, and global styles */
+import '../styles/global.css';
+import profile from '../data/profile.json';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const siteUrl = 'https://pasindupramodya.com';
+const {
+  title = `${profile.name} — ${profile.title}`,
+  description = profile.heroSubline,
+} = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+
+/* JSON-LD structured data (WebSite, ProfilePage, Person) */
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebSite',
+      '@id': `${siteUrl}/#website`,
+      url: siteUrl,
+      name: `${profile.name} Portfolio`,
+      description: profile.about,
+      publisher: {
+        '@id': `${siteUrl}/#person`,
+      },
+    },
+    {
+      '@type': 'ProfilePage',
+      '@id': `${siteUrl}/#profilepage`,
+      url: siteUrl,
+      name: `${profile.name} | ${profile.title} Portfolio`,
+      mainEntity: {
+        '@id': `${siteUrl}/#person`,
+      },
+    },
+    {
+      '@type': 'Person',
+      '@id': `${siteUrl}/#person`,
+      name: profile.name,
+      url: siteUrl,
+      sameAs: [
+        `https://${profile.contact.github}`,
+        `https://${profile.contact.linkedin}`,
+        `https://${profile.contact.twitter}`,
+      ],
+      jobTitle: profile.title,
+      image: `${siteUrl}/og_image.png`,
+      description: profile.about,
+      knowsAbout: [
+        'Java',
+        'Rust',
+        'Elixir',
+        'TypeScript',
+        'Distributed Systems',
+        'Database Design',
+        'Microservices',
+      ],
+    },
+  ],
+};
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalUrl} />
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+    <!-- Icons & Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={profile.name} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Keywords -->
+    <meta name="keywords" content={`${profile.name}, ${profile.title}, System Engineer, Software Developer, Portfolio, ${profile.interests.join(', ')}`} />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content={profile.name} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={`${siteUrl}/og_image.png`} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:creator" content="@Master_br1an" />
+    <meta name="twitter:site" content="@Master_br1an" />
+    <meta name="twitter:image" content={`${siteUrl}/og_image.png`} />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FFF8E7" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+    <!-- Google Fonts: Space Grotesk (display) + JetBrains Mono (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

@@ -1,11 +1,41 @@
 ---
-import Welcome from '../components/Welcome.astro';
+/* index.astro — Main page assembling all sections */
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from '../components/Navbar.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Experience from '../components/Experience.astro';
+import Education from '../components/Education.astro';
+import Projects from '../components/Projects.astro';
+import Skills from '../components/Skills.astro';
+import Blog from '../components/Blog.astro';
+import DebugLog from '../components/DebugLog.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <Layout>
-	<Welcome />
+  <Navbar />
+
+  <main>
+    <Hero />
+    <hr class="neo-divider" />
+    <About />
+    <hr class="neo-divider" />
+    <Experience />
+    <hr class="neo-divider" />
+    <Education />
+    <hr class="neo-divider" />
+    <Projects />
+    <hr class="neo-divider" />
+    <Skills />
+    <hr class="neo-divider" />
+    <Blog />
+    <hr class="neo-divider" />
+    <DebugLog />
+    <hr class="neo-divider" />
+    <Contact />
+  </main>
+
+  <Footer />
 </Layout>

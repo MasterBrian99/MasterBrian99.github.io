@@ -1,0 +1,64 @@
+{
+  "experiences": [
+    {
+      "id": 1,
+      "title": "Senior Software Engineer",
+      "company": "Wavezync",
+      "location": "Remote",
+      "startDate": "April 2025",
+      "endDate": "Present",
+      "description": "Senior Software Engineer at Wavezync.",
+      "technologies": []
+    },
+    {
+      "id": 2,
+      "title": "Contract Software Engineer",
+      "company": "Independent Contract",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "Nov 2024",
+      "endDate": "Mar 2025",
+      "description": "Worked as a Contract Software Engineer.",
+      "technologies": []
+    },
+    {
+      "id": 3,
+      "title": "Senior Software Engineer",
+      "company": "RapidM3",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "April 2024",
+      "endDate": "Oct 2024",
+      "description": "Spearheaded the development of Aquinas University CMS, leveraging React and Spring Boot to enhance administrative efficiency and user engagement by 30%. Optimized CI/CD pipelines using Docker and Kubernetes, reducing deployment times by 25%.",
+      "technologies": ["React", "Spring Boot", "Docker", "Kubernetes"]
+    },
+    {
+      "id": 4,
+      "title": "Software Engineer",
+      "company": "RapidM3",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "April 2022",
+      "endDate": "April 2024",
+      "description": "Designed and maintained the 'Tuto' CMS, utilizing Node.js and MongoDB to streamline academic workflows, resulting in a 20% improvement in operational efficiency. Enhanced the video streaming platform, implementing scalable cloud infrastructure that improved platform stability and supported a 50% increase in concurrent users.",
+      "technologies": ["Node.js", "MongoDB"]
+    },
+    {
+      "id": 5,
+      "title": "Software Engineer Intern",
+      "company": "Capital Maharaja Group (CMG)",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "Aug 2021",
+      "endDate": "April 2022",
+      "description": "Built a real-time web application using WebSocket technology, allowing users to participate in the Sirasa Lakshapathi TV program. Integrated the application with the KiKi service layer for seamless user interaction and real-time updates. Developed backend services in Java (Spring Boot) to support real-time data processing and analytics.",
+      "technologies": ["Java", "Spring Boot", "WebSockets"]
+    },
+    {
+      "id": 6,
+      "title": "React Developer",
+      "company": "Hotcat Technologies",
+      "location": "Panadura, Sri Lanka",
+      "startDate": "April 2021",
+      "endDate": "July 2021",
+      "description": "Developed and maintained interactive user interfaces using React, ensuring seamless integration with backend services for scalable web applications",
+      "technologies": ["React"]
+    }
+  ]
+}
