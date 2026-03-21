@@ -1,69 +1,20 @@
 ---
 /* Layout.astro — Main document shell with comprehensive SEO, fonts, and global styles */
-import '../styles/global.css';
-import profile from '../data/profile.json';
+import "../styles/global.css";
+import profile from "../data/profile.json";
 
 interface Props {
   title?: string;
   description?: string;
 }
 
-const siteUrl = 'https://pasindupramodya.com';
+const siteUrl = "https://pasindupramodya.com";
 const {
   title = `${profile.name} — ${profile.title}`,
-  description = profile.heroSubline,
+  description = "Senior Software Engineer building distributed systems, database internals, and compilers in Rust and Go. Based in Colombo.",
 } = Astro.props;
 
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
-
-/* JSON-LD structured data (WebSite, ProfilePage, Person) */
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@graph': [
-    {
-      '@type': 'WebSite',
-      '@id': `${siteUrl}/#website`,
-      url: siteUrl,
-      name: `${profile.name} Portfolio`,
-      description: profile.about,
-      publisher: {
-        '@id': `${siteUrl}/#person`,
-      },
-    },
-    {
-      '@type': 'ProfilePage',
-      '@id': `${siteUrl}/#profilepage`,
-      url: siteUrl,
-      name: `${profile.name} | ${profile.title} Portfolio`,
-      mainEntity: {
-        '@id': `${siteUrl}/#person`,
-      },
-    },
-    {
-      '@type': 'Person',
-      '@id': `${siteUrl}/#person`,
-      name: profile.name,
-      url: siteUrl,
-      sameAs: [
-        `https://${profile.contact.github}`,
-        `https://${profile.contact.linkedin}`,
-        `https://${profile.contact.twitter}`,
-      ],
-      jobTitle: profile.title,
-      image: `${siteUrl}/og_image.png`,
-      description: profile.about,
-      knowsAbout: [
-        'Java',
-        'Rust',
-        'Elixir',
-        'TypeScript',
-        'Distributed Systems',
-        'Database Design',
-        'Microservices',
-      ],
-    },
-  ],
-};
 ---
 
 <!doctype html>
@@ -92,7 +43,10 @@ const jsonLd = {
     <meta name="robots" content="index, follow" />
 
     <!-- Keywords -->
-    <meta name="keywords" content={`${profile.name}, ${profile.title}, System Engineer, Software Developer, Portfolio, ${profile.interests.join(', ')}`} />
+    <meta
+      name="keywords"
+      content={`${profile.name}, ${profile.title}, Software Developer, Portfolio, ${profile.interests.join(", ")}`}
+    />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
@@ -117,8 +71,58 @@ const jsonLd = {
     <meta name="color-scheme" content="light" />
 
     <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
-
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pasindu Pramodya",
+        "url": "https://pasindupramodya.com",
+        "image": "https://pasindupramodya.com/profile.png",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior Software Engineer specializing in distributed systems, real-time data pipelines, and systems programming in Rust and Go.",
+        "knowsAbout": [
+          "Distributed Systems",
+          "Systems Programming",
+          "Rust",
+          "Go",
+          "Real-time Data Pipelines",
+          "Performance Engineering",
+          "Database Internals",
+          "Compiler Design",
+          "LLVM"
+        ],
+        "sameAs": [
+          "https://github.com/masterbrian99",
+          "https://blog.pasindupramodya.com",
+          "https://linkedin.com/in/pasindu-p-konghawaththa-3808861a0",
+          "https://x.com/Master_br1an",
+          "https://orcid.org/0009-0003-6540-9106"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Wavezync"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "International College of Business and Technology"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Institute of Software Engineering (IJSE)"
+          }
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://pasindupramodya.com"
+        },
+        "nationality": "Sri Lankan",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Colombo, Sri Lanka"
+        }
+      }
+    </script>
     <!-- Google Fonts: Space Grotesk (display) + JetBrains Mono (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
