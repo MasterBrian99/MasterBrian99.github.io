@@ -24,6 +24,24 @@
       "readTime": "5 min read",
       "date": "2025-12-16",
       "url": "blog.wavezync.com/building-with-postgresql-the-slotted-counter-pattern?ref=pasindupramodya.com"
+    },
+    {
+      "id": 3,
+      "title": "We Stopped Too Early: Why I'm Building a Classical Chess Engine from Scratch",
+      "description": "bringing back the classical chess engine with probabilistic approach ",
+      "excerpt": "Why I'm building a classical chess engine from scratch",
+      "tags": [
+        "Chess",
+        "Engine",
+        "Probabilistic",
+        "Classical",
+        "heuristic",
+        "AI",
+        "Information Theory"
+      ],
+      "readTime": "22 min read",
+      "date": "2025-03-26",
+      "url": "blog.pasindupramodya.com/we-stopped-too-early-why-i-m-building-a-classical-chess-engine-from-scratch?ref=pasindupramodya.com"
     }
   ],
   "writingStyle": "I write about practical systems engineering challenges, sharing real-world solutions and self hosting. My articles focus on implementation details, performance considerations, and architectural patterns that developers can apply in their daily work.",
