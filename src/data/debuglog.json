@@ -5,7 +5,7 @@
       "time": "2:30 PM",
       "category": "music",
       "title": "Currently Listening",
-      "content": "ScurtDae - Back to Life (BIRTHDAE) ",
+      "content": "EVERGLOW (에버글로우) - LA DI DA MV (Stone Music Entertainment) ",
       "icon": "music"
     },
     {
@@ -13,7 +13,7 @@
       "time": "12:15 PM",
       "category": "video",
       "title": "Last Watched",
-      "content": "Yes, The Probability Really Is 51.8% / MindYourDecisions",
+      "content": "What the Higgs Boson Actually Is (No Analogies)  / Physics Explained",
       "icon": "video"
     },
     {
@@ -21,7 +21,7 @@
       "time": "10:45 AM",
       "category": "work",
       "title": "Currently Working On",
-      "content": "New Chess Engine",
+      "content": "New Chess Research Paper",
       "icon": "code"
     },
     {
@@ -29,7 +29,7 @@
       "time": "4:20 PM",
       "category": "reading",
       "title": "Currently Reading",
-      "content": "12 Rules For Life (Jordan B. Peterson, Norman Doidge etc.)",
+      "content": "48 Laws of Power (Greene, Robert)",
       "icon": "book"
     },
     {
@@ -37,7 +37,7 @@
       "time": "9:30 AM",
       "category": "work",
       "title": "Completed",
-      "content": "New bitwise operations module for chess engine",
+      "content": "messing with shannon entropy theory",
       "icon": "check"
     },
     {
@@ -45,7 +45,7 @@
       "time": "6:00 PM",
       "category": "learning",
       "title": "Learning",
-      "content": "WebAssembly optimization",
+      "content": "Information theory",
       "icon": "zap"
     }
   ],
