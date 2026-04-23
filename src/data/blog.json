@@ -52,6 +52,22 @@
       "readTime": "14 min read",
       "date": "2025-03-26",
       "url": "blog.pasindupramodya.com/posts/security-is-not-a-feature?ref=pasindupramodya.com"
+    },
+    {
+      "id": 5,
+      "title": " Why We Seek Validation from Others",
+      "description": "We check our phones not to connect, but to see if we’ve been seen.",
+      "excerpt": "We check our phones not to connect, but to see if we’ve been seen.",
+      "tags": [
+        "Psychology",
+        "Philosophy",
+        "Life",
+        "Self Worth",
+        "Mental Health"
+      ],
+      "readTime": "19 min read",
+      "date": "2025-04-18",
+      "url": "blog.pasindupramodya.com/posts/why-we-seek-validation-from-others?ref=pasindupramodya.com"
     }
   ],
   "writingStyle": "I write about practical systems engineering challenges, sharing real-world solutions and self hosting. My articles focus on implementation details, performance considerations, and architectural patterns that developers can apply in their daily work.",
