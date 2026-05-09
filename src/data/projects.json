@@ -46,16 +46,12 @@
     },
     {
       "id": 4,
-      "title": "Bcn-rs",
-      "description": "Blockchain and mining implementation in Rust ",
-      "tech": ["Rust"],
-      "highlights": [
-        "Blockchain fundamentals",
-        "Efficient mining algorithms",
-        "Secure transactions"
-      ],
-      "github": "github.com/MasterBrian99/bcn-rs?ref=pasindupramodya.com",
-      "live": null
+      "title": "Reflectly",
+      "description": "A research app for clinical psychology validation. Uses a structured multi-stage reasoning pipeline to produce therapeutically valid responses that support reflective dialogue in a clinical research context. ",
+      "tech": ["TypeScript", "Ollama", "Electron"],
+      "highlights": ["Research", "Psychology Research", "Experimental"],
+      "github": "github.com/MasterBrian99/reflectly?ref=pasindupramodya.com",
+      "live": "github.com/MasterBrian99/reflectly/blob/main/research-flow.md?ref=pasindupramodya.com"
     },
     {
       "id": 5,
@@ -70,6 +66,19 @@
       ],
       "live": null,
       "github": "github.com/MasterBrian99/nexquor?ref=pasindupramodya.com"
+    },
+    {
+      "id": 6,
+      "title": "Bcn-rs",
+      "description": "Blockchain and mining implementation in Rust ",
+      "tech": ["Rust"],
+      "highlights": [
+        "Blockchain fundamentals",
+        "Efficient mining algorithms",
+        "Secure transactions"
+      ],
+      "github": "github.com/MasterBrian99/bcn-rs?ref=pasindupramodya.com",
+      "live": null
     }
   ]
 }

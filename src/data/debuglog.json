@@ -5,7 +5,7 @@
       "time": "2:30 PM",
       "category": "music",
       "title": "Currently Listening",
-      "content": "EVERGLOW (에버글로우) - LA DI DA MV (Stone Music Entertainment) ",
+      "content": "Charlie Puth - \"How Long\" [Official Video]",
       "icon": "music"
     },
     {
@@ -13,7 +13,7 @@
       "time": "12:15 PM",
       "category": "video",
       "title": "Last Watched",
-      "content": "What the Higgs Boson Actually Is (No Analogies)  / Physics Explained",
+      "content": "FFmpeg: The Incredible Technology Behind Video on the Internet | Lex Fridman Podcast #496",
       "icon": "video"
     },
     {
@@ -21,7 +21,7 @@
       "time": "10:45 AM",
       "category": "work",
       "title": "Currently Working On",
-      "content": "New Chess Research Paper",
+      "content": "New Psychology Research App",
       "icon": "code"
     },
     {
@@ -37,7 +37,7 @@
       "time": "9:30 AM",
       "category": "work",
       "title": "Completed",
-      "content": "messing with shannon entropy theory",
+      "content": "Complexity Theory",
       "icon": "check"
     },
     {
