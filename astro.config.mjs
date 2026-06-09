@@ -5,7 +5,6 @@ import react from "@astrojs/react";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
 
-import yeskunallumami from "@yeskunall/astro-umami";
 
 // https://astro.build/config
 export default defineConfig({
@@ -25,11 +24,7 @@ export default defineConfig({
         };
       },
     }),
-    yeskunallumami({
-      id: "676c340f-d99b-41ee-aaa4-919d4e07ad55",
-      hostUrl: "https://umami.pasindupramodya.com",
-      endpointUrl: "https://umami.pasindupramodya.com",
-    }),
+
   ],
 
   vite: {
