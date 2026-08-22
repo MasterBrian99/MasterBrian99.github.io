@@ -28,6 +28,7 @@ interface ButtonProps
   type?: 'button' | 'submit'
   /** Required when the label alone isn't descriptive (icon-only buttons). */
   label?: string
+  className?:string
 }
 
 /* 'pouf-btn' rides along as an unstyled MARKER class: it carries no rules of
@@ -122,6 +123,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
     loading,
     type = 'button',
     label,
+    className,
     ...nativeProps
   },
   ref,
@@ -131,7 +133,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(function Button
       ref={ref}
       {...nativeProps}
       type={type}
-      className={buttonClasses({ tone, size, variant, block })}
+      className={cx(buttonClasses({ tone, size, variant, block }),className)}
       onClick={onClick}
       disabled={disabled || loading}
       aria-busy={loading || undefined}

@@ -149,3 +149,13 @@ Retrieved 2026-08-22, License - CC BY-SA 4.0
 .my-icon {
   fill: #ff5733;
 }
+
+@keyframes hero-float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+}

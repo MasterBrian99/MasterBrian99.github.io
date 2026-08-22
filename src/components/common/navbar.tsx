@@ -24,7 +24,7 @@ const Navbar = () => {
         actions={
           <>
             <ThemeToggle />
-            <Button size="sm">Contact</Button>
+            <Button size="sm" className="hidden! md:block!">Contact</Button>
           </>
         }
       />
