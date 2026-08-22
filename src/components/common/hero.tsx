@@ -38,8 +38,8 @@ const floatingIcons = [
   },
   {
     Icon: AwsIcon,
-    pos: "top-[62%] left-[30%]",
-    size: "h-10 w-10",
+    pos: "top-[65%] left-[30%]",
+    size: "h-16 w-16",
     show: "hidden md:block",
     dur: 7.5,
     delay: 1.2,
@@ -70,8 +70,8 @@ const floatingIcons = [
   },
   {
     Icon: ElixirIcon,
-    pos: "top-[30%] right-[26%]",
-    size: "h-11 w-11",
+    pos: "top-[25%] right-[26%]",
+    size: "h-13 w-13",
     show: "hidden md:block",
     dur: 7.8,
     delay: 1.4,
