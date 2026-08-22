@@ -1,5 +1,7 @@
 ---
 import "@/styles/global.css"
+import "@fontsource-variable/nunito"
+import "../components/pouf/pouf.css"
 ---
 
 <html lang="en">
@@ -7,6 +9,26 @@ import "@/styles/global.css"
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      ;(function () {
+        var media = window.matchMedia("(prefers-color-scheme: dark)")
+        try {
+          var saved = localStorage.getItem("theme")
+          var theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : media.matches
+                ? "dark"
+                : "light"
+          document.documentElement.setAttribute("data-theme", theme)
+        } catch (e) {
+          document.documentElement.setAttribute(
+            "data-theme",
+            media.matches ? "dark" : "light"
+          )
+        }
+      })()
+    </script>
     <title>Astro App</title>
   </head>
   <body>
