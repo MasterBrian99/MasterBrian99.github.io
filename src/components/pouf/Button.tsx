@@ -158,6 +158,7 @@ interface IconButtonProps
   disabled?: boolean
   loading?: boolean
   type?: 'button' | 'submit'
+  className?:string
 }
 
 /** A square, labelled icon action. The required `label` prevents the common
@@ -173,6 +174,7 @@ export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(functio
     disabled,
     loading,
     type = 'button',
+    className,
     ...nativeProps
   },
   ref,
@@ -182,7 +184,7 @@ export const IconButton = forwardRef<HTMLButtonElement, IconButtonProps>(functio
       ref={ref}
       {...nativeProps}
       type={type}
-      className={buttonClasses({ tone, size, variant, shape: 'icon' })}
+      className={cx(buttonClasses({ tone, size, variant, shape: 'icon' }),className)}
       onClick={onClick}
       disabled={disabled || loading}
       aria-busy={loading || undefined}

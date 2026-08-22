@@ -131,3 +131,21 @@
     @apply font-sans;
     }
 }
+
+[data-theme="light"] .dark-icon-theme-change {
+  display: none;
+}
+
+[data-theme="dark"] .light-icon-theme-change {
+  display: none;
+}
+
+/*
+Source - https://stackoverflow.com/a/65147574
+Posted by Mártin Alcalá, modified by community. See post 'Timeline' for change history
+Retrieved 2026-08-22, License - CC BY-SA 4.0
+*/
+
+.my-icon {
+  fill: #ff5733;
+}
