@@ -67,6 +67,8 @@ import {
   IconWind,
   IconDroplet,
   IconSchool,
+  IconBrandGithub,
+  IconExternalLink,
   type IconProps,
 } from '@tabler/icons-react'
 import type { ComponentType, ReactElement } from 'react'
@@ -163,6 +165,8 @@ const ICONS = {
   wind: IconWind,
   drop: IconDroplet,
   school: IconSchool,
+  github: IconBrandGithub,
+  external: IconExternalLink,
 } as const
 
 export type IconName = keyof typeof ICONS
