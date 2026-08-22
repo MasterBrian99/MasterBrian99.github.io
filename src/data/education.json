@@ -1,0 +1,37 @@
+{
+  "education": [
+    {
+      "id": 1,
+      "degree": "BSc (Hons) Computing",
+      "institution": "Wrexham University",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "2025",
+      "endDate": "2026",
+      "grade": "Upper second-class",
+      "activities": [
+          "Mobile Application",
+        "Advanced Programming",
+        "System Analysis and Design",
+        "Software Design",
+        "Distributed Database"
+      ]
+    },
+    {
+      "id": 2,
+      "degree": "Graduate Diploma in Software Engineering",
+      "institution": "Institute of Software Engineering (IJSE)",
+      "location": "Colombo, Sri Lanka",
+      "startDate": "2020",
+      "endDate": "2022",
+      "grade": "",
+      "activities": [
+        "Software Design and Architecture",
+        "Database Systems",
+        "Web Development",
+        "Cloud Computing",
+        "Data Structures and Algorithms",
+        "DevOps Practices"
+      ]
+    }
+  ]
+}
