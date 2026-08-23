@@ -94,7 +94,6 @@ const Contact = () => {
                     target={
                       social.href.startsWith("mailto") ? undefined : "_blank"
                     }
-                    rel="noopener noreferrer"
                     className={cn(
                       "hover:bg-bg flex items-center gap-4 rounded-[18px] p-3 transition",
                       toneClass(tone)

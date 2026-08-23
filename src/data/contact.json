@@ -12,7 +12,7 @@
     "eyebrow": "Contact",
     "heading": "Let's build something reliable.",
     "description": "Whether you have a systems problem to untangle, a stack to scale, or just want to talk architectures — my inbox is open.",
-    "email": "hello@pasindupramodya.com",
+    "email": "mail@pasindupramodya.com",
     "location": "Colombo, Sri Lanka (Remote-friendly)",
     "availability": "Open to collaborations",
     "socials": [
@@ -23,13 +23,13 @@
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/pasindupramodya",
+        "href": "www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/",
         "icon": "linkedin"
       },
-      { "label": "X", "href": "https://x.com/pasindupramodya", "icon": "x" },
+      { "label": "X", "href": "x.com/Master_br1an", "icon": "x" },
       {
         "label": "Email",
-        "href": "mailto:hello@pasindupramodya.com",
+        "href": "mailto:mail@pasindupramodya.com",
         "icon": "mail"
       }
     ]
@@ -53,13 +53,13 @@
           { "label": "GitHub", "href": "https://github.com/MasterBrian99" },
           {
             "label": "LinkedIn",
-            "href": "https://www.linkedin.com/in/pasindupramodya"
+            "href": "www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/"
           },
-          { "label": "X", "href": "https://x.com/pasindupramodya" },
-          { "label": "Email", "href": "mailto:hello@pasindupramodya.com" }
+          { "label": "X", "href": "x.com/Master_br1an" },
+          { "label": "Email", "href": "mailto:mail@pasindupramodya.com" }
         ]
       }
     ],
-    "note": "© 2026 Brian Masinde. Built with Astro, React and a healthy amount of clay."
+    "note": "© 2026 Pasindu Pramodya. Built with Astro, React and a healthy amount of clay."
   }
 }
