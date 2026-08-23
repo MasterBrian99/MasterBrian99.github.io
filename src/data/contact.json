@@ -23,7 +23,7 @@
       },
       {
         "label": "LinkedIn",
-        "href": "www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/",
+        "href": "https://www.linkedin.com/in/pasindu-pramodya-3808861a0/",
         "icon": "linkedin"
       },
       { "label": "X", "href": "x.com/Master_br1an", "icon": "x" },
@@ -53,9 +53,9 @@
           { "label": "GitHub", "href": "https://github.com/MasterBrian99" },
           {
             "label": "LinkedIn",
-            "href": "www.linkedin.com/in/pasindu-p-konghawaththa-3808861a0/"
+            "href": "https://www.linkedin.com/in/pasindu-pramodya-3808861a0/"
           },
-          { "label": "X", "href": "x.com/Master_br1an" },
+          { "label": "X", "href": "https://x.com/Master_br1an" },
           { "label": "Email", "href": "mailto:mail@pasindupramodya.com" }
         ]
       }
