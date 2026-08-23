@@ -1,14 +1,16 @@
 // @ts-check
-import { defineConfig } from "astro/config";
 
-import react from "@astrojs/react";
-import tailwindcss from "@tailwindcss/vite";
-import sitemap from "@astrojs/sitemap";
-
+import tailwindcss from "@tailwindcss/vite"
+import { defineConfig } from "astro/config"
+import react from "@astrojs/react"
+import sitemap from "@astrojs/sitemap"
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://pasindupramodya.com",
+  vite: {
+    plugins: [tailwindcss()],
+  },
   integrations: [
     react(),
     sitemap({
@@ -21,13 +23,8 @@ export default defineConfig({
           ),
           priority: item.url === "https://pasindupramodya.com/" ? 1.0 : 0.8,
           lastmod: new Date().toISOString(),
-        };
+        }
       },
     }),
-
   ],
-
-  vite: {
-    plugins: [tailwindcss()],
-  },
-});
+})

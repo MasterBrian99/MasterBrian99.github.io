@@ -1,41 +1,31 @@
 ---
-/* index.astro — Main page assembling all sections */
-import Layout from '../layouts/Layout.astro';
-import Navbar from '../components/Navbar.astro';
-import Hero from '../components/Hero.astro';
-import About from '../components/About.astro';
-import Experience from '../components/Experience.astro';
-import Education from '../components/Education.astro';
-import Projects from '../components/Projects.astro';
-import Skills from '../components/Skills.astro';
-import Blog from '../components/Blog.astro';
-import DebugLog from '../components/DebugLog.astro';
-import Contact from '../components/Contact.astro';
-import Footer from '../components/Footer.astro';
+import Navbar from "@/components/common/navbar"
+import Experience from "@/components/common/experience"
+import Education from "@/components/common/education"
+import Projects from "@/components/common/projects"
+import Skills from "@/components/common/skills"
+import Writing from "@/components/common/blog"
+import DebugLog from "@/components/common/debuglog"
+import Contact from "@/components/common/contact"
+import SiteFooter from "@/components/common/footer"
+import Hero from "@/components/common/hero"
+import About from "@/components/common/about"
+import Layout from "@/layouts/main.astro"
 ---
 
 <Layout>
-  <Navbar />
+  <section class="container mx-auto">
+    <Navbar client:load />
 
-  <main>
     <Hero />
-    <hr class="neo-divider" />
     <About />
-    <hr class="neo-divider" />
     <Experience />
-    <hr class="neo-divider" />
     <Education />
-    <hr class="neo-divider" />
     <Projects />
-    <hr class="neo-divider" />
     <Skills />
-    <hr class="neo-divider" />
-    <Blog />
-    <hr class="neo-divider" />
+    <Writing />
     <DebugLog />
-    <hr class="neo-divider" />
     <Contact />
-  </main>
-
-  <Footer />
+    <SiteFooter />
+  </section>
 </Layout>

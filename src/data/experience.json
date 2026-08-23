@@ -8,7 +8,7 @@
       "startDate": "April 2025",
       "endDate": "Present",
       "description": "Senior Software Engineer at Wavezync.",
-      "technologies": []
+      "technologies": ["Node.js","Postgres"]
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "startDate": "Nov 2024",
       "endDate": "Mar 2025",
       "description": "Worked as a Contract Software Engineer.",
-      "technologies": []
+      "technologies": ["Java","React"]
     },
     {
       "id": 3,

@@ -1,23 +1,17 @@
 ---
-/* Layout.astro — Main document shell with comprehensive SEO, fonts, and global styles */
-import "../styles/global.css";
-import profile from "../data/profile.json";
+import "@/styles/global.css"
+import "@fontsource-variable/nunito"
+import "../components/pouf/pouf.css"
+import contact from "../data/contact.json"
 
-interface Props {
-  title?: string;
-  description?: string;
-}
-
-const siteUrl = "https://pasindupramodya.com";
+const siteUrl = "https://pasindupramodya.com"
 const {
-  title = `${profile.name} — ${profile.title}`,
+  title = `${contact.name} — ${contact.title}`,
   description = "Senior Software Engineer building distributed systems, database internals, and compilers in Rust and Go. Based in Colombo.",
-} = Astro.props;
-
-const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+} = Astro.props
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href
 ---
 
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -39,13 +33,13 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <!-- Primary SEO Meta Tags -->
     <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="author" content={profile.name} />
+    <meta name="author" content={contact.name} />
     <meta name="robots" content="index, follow" />
 
     <!-- Keywords -->
     <meta
       name="keywords"
-      content={`${profile.name}, ${profile.title}, Software Developer, Portfolio, ${profile.interests.join(", ")}`}
+      content={`${contact.name}, ${contact.title}, Software Developer, Portfolio, ${contact.interests.join(", ")}`}
     />
 
     <!-- Open Graph / Facebook -->
@@ -53,7 +47,7 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:site_name" content={profile.name} />
+    <meta property="og:site_name" content={contact.name} />
     <meta property="og:locale" content="en_US" />
     <meta property="og:image" content={`${siteUrl}/og_image.png`} />
 
@@ -123,13 +117,28 @@ const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
         }
       }
     </script>
-    <!-- Google Fonts: Space Grotesk (display) + JetBrains Mono (body) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    <script is:inline>
+      ;(function () {
+        var media = window.matchMedia("(prefers-color-scheme: dark)")
+
+        try {
+          var saved = localStorage.getItem("theme")
+          var theme =
+            saved === "light" || saved === "dark"
+              ? saved
+              : media.matches
+                ? "dark"
+                : "light"
+
+          document.documentElement.setAttribute("data-theme", theme)
+        } catch (e) {
+          document.documentElement.setAttribute(
+            "data-theme",
+            media.matches ? "dark" : "light"
+          )
+        }
+      })()
+    </script>
   </head>
   <body>
     <slot />

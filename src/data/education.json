@@ -2,17 +2,18 @@
   "education": [
     {
       "id": 1,
-      "degree": "BSc (Hons) Software Engineering",
-      "institution": "International College of Business and Technology",
+      "degree": "BSc (Hons) Computing",
+      "institution": "Wrexham University",
       "location": "Colombo, Sri Lanka",
-      "startDate": "2023",
-      "endDate": "Present",
-      "grade": "",
+      "startDate": "2025",
+      "endDate": "2026",
+      "grade": "Upper second-class",
       "activities": [
+          "Mobile Application",
         "Advanced Programming",
         "System Analysis and Design",
-        "Machine Learning",
-        "Software Testing"
+        "Software Design",
+        "Distributed Database"
       ]
     },
     {

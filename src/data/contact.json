@@ -1,0 +1,65 @@
+{
+  "name": "Pasindu Pramodya",
+  "title": "System Engineer",
+  "interests": [
+    "Distributed Systems",
+    "Performance Engineering",
+    "Open Source",
+    "System Architecture",
+    "Database Design"
+  ],
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's build something reliable.",
+    "description": "Whether you have a systems problem to untangle, a stack to scale, or just want to talk architectures — my inbox is open.",
+    "email": "mail@pasindupramodya.com",
+    "location": "Colombo, Sri Lanka (Remote-friendly)",
+    "availability": "Open to collaborations",
+    "socials": [
+      {
+        "label": "GitHub",
+        "href": "https://github.com/MasterBrian99",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/pasindu-pramodya-3808861a0/",
+        "icon": "linkedin"
+      },
+      { "label": "X", "href": "x.com/Master_br1an", "icon": "x" },
+      {
+        "label": "Email",
+        "href": "mailto:mail@pasindupramodya.com",
+        "icon": "mail"
+      }
+    ]
+  },
+  "footer": {
+    "brand": "MasterBrian99",
+    "tagline": "Systems engineer building quiet, reliable software.",
+    "columns": [
+      {
+        "title": "Explore",
+        "links": [
+          { "label": "About", "href": "#about" },
+          { "label": "Experience", "href": "#experience" },
+          { "label": "Projects", "href": "#projects" },
+          { "label": "Writing", "href": "#writing" }
+        ]
+      },
+      {
+        "title": "Elsewhere",
+        "links": [
+          { "label": "GitHub", "href": "https://github.com/MasterBrian99" },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/pasindu-pramodya-3808861a0/"
+          },
+          { "label": "X", "href": "https://x.com/Master_br1an" },
+          { "label": "Email", "href": "mailto:mail@pasindupramodya.com" }
+        ]
+      }
+    ],
+    "note": "© 2026 Pasindu Pramodya. Built with Astro, React and a healthy amount of clay."
+  }
+}
