@@ -51,7 +51,7 @@ const Experience = () => {
         <ol className="relative">
           <span
             aria-hidden="true"
-            className="absolute bottom-0 left-[14px] top-0 w-[3px] -translate-x-1/2 rounded-full bg-gradient-to-b from-purple via-mint to-pink opacity-60 md:left-1/2"
+            className="absolute bottom-0 left-3.5 top-0 w-0.75 -translate-x-1/2 rounded-full bg-linear-to-b from-purple via-mint to-pink opacity-60 md:left-1/2"
           />
           {experiences.map((exp, i) => {
             const tone = tones[i % tones.length]
@@ -68,7 +68,7 @@ const Experience = () => {
                 <span
                   aria-hidden="true"
                   className={cn(
-                    "absolute left-[14px] top-9 h-4 w-4 -translate-x-1/2 rounded-full bg-[var(--tone,var(--purple))] ring-4 ring-surface [box-shadow:inset_0_-2px_0_rgba(0,0,0,0.15)] md:left-1/2",
+                    "absolute left-3.5 top-9 h-4 w-4 -translate-x-1/2 rounded-full bg-(--tone,var(--purple)) ring-4 ring-surface [box-shadow:inset_0_-2px_0_rgba(0,0,0,0.15)] md:left-1/2",
                     toneClass(tone)
                   )}
                 />
@@ -90,7 +90,7 @@ const Experience = () => {
                     {exp.title}
                   </Heading>
 
-                  <p className="mt-1 flex items-center gap-2 text-sm font-black text-[var(--tone,var(--ink))]">
+                  <p className="mt-1 flex items-center gap-2 text-sm font-black text-(--tone,var(--ink))">
                     {exp.company}
                   </p>
                   <p className="mt-1 text-[13px] font-bold text-muted">
@@ -102,7 +102,7 @@ const Experience = () => {
                   </Text>
 
                   {exp.technologies.length > 0 && (
-                    <div className="mt-5 flex flex-wrap gap-[6px]">
+                    <div className="mt-5 flex flex-wrap gap-1.5">
                       {exp.technologies.map((tech) => (
                         <Badge key={tech} tone="mint">
                           {tech}

@@ -1,0 +1,41 @@
+{
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's build something reliable.",
+    "description": "Whether you have a systems problem to untangle, a stack to scale, or just want to talk architectures — my inbox is open.",
+    "email": "hello@pasindupramodya.com",
+    "location": "Colombo, Sri Lanka (Remote-friendly)",
+    "availability": "Open to collaborations",
+    "socials": [
+      { "label": "GitHub", "href": "https://github.com/MasterBrian99", "icon": "github" },
+      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/pasindupramodya", "icon": "linkedin" },
+      { "label": "X", "href": "https://x.com/pasindupramodya", "icon": "x" },
+      { "label": "Email", "href": "mailto:hello@pasindupramodya.com", "icon": "mail" }
+    ]
+  },
+  "footer": {
+    "brand": "MasterBrian99",
+    "tagline": "Systems engineer building quiet, reliable software.",
+    "columns": [
+      {
+        "title": "Explore",
+        "links": [
+          { "label": "About", "href": "#about" },
+          { "label": "Experience", "href": "#experience" },
+          { "label": "Projects", "href": "#projects" },
+          { "label": "Writing", "href": "#writing" }
+        ]
+      },
+      {
+        "title": "Elsewhere",
+        "links": [
+          { "label": "GitHub", "href": "https://github.com/MasterBrian99" },
+          { "label": "LinkedIn", "href": "https://www.linkedin.com/in/pasindupramodya" },
+          { "label": "X", "href": "https://x.com/pasindupramodya" },
+          { "label": "Email", "href": "mailto:hello@pasindupramodya.com" }
+        ]
+      }
+    ],
+    "note": "© 2026 Brian Masinde. Built with Astro, React and a healthy amount of clay."
+  }
+}

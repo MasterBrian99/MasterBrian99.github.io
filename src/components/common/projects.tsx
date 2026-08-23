@@ -67,7 +67,7 @@ const Projects = () => {
                 <div className="relative">
                   <div className="flex items-center justify-between gap-3">
                     <Blob icon={icon} tone={tone} size="sm" />
-                    <div className="flex flex-wrap gap-[6px]">
+                    <div className="flex flex-wrap gap-1.5">
                       {project.tech.map((t) => (
                         <Badge key={t} tone="mint">
                           {t}
@@ -76,11 +76,11 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  <Heading level={3} className="mt-4 text-xl leading-tight">
+                  <Heading level={3} className="mt-4 text-2xl leading-tight">
                     {project.title}
                   </Heading>
 
-                  <Text className="mt-3 block text-[14px] leading-[1.7]">
+                  <Text className="mt-3 block text-[16px] leading-[1.7]">
                     {project.description}
                   </Text>
 

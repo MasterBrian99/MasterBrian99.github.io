@@ -10,9 +10,14 @@ const brand = (
   </div>
 )
 const links = [
-  { label: "Product", href: "1", active: true },
-  { label: "Pricing", href: "2" },
-  { label: "Docs", href: "3" },
+  { label: "About", href: "#about" },
+  { label: "Experience", href: "#experience" },
+  { label: "Education", href: "#education" },
+  { label: "Projects", href: "#projects" },
+  { label: "Skills", href: "#skills" },
+  { label: "Writing", href: "#writing" },
+  { label: "Debug Log", href: "#debug-log" },
+  { label: "Contact", href: "#contact" },
 ]
 
 const Navbar = () => {
@@ -24,7 +29,17 @@ const Navbar = () => {
         actions={
           <>
             <ThemeToggle />
-            <Button size="sm" className="hidden! md:block!">Contact</Button>
+            <Button
+              size="sm"
+              className="hidden! md:block!"
+              onClick={() =>
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" })
+              }
+            >
+              Contact
+            </Button>
           </>
         }
       />

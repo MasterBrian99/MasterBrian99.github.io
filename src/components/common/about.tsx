@@ -1,7 +1,6 @@
-import React from "react"
 import { Heading, Text, Eyebrow, Highlight } from "../pouf/text"
 import { Badge } from "../pouf/media"
-import { Button } from "../pouf/Button"
+import { buttonClasses } from "../pouf/Button"
 
 const skills = [
   { label: "System Design", tone: "purple" },
@@ -39,7 +38,7 @@ const About = () => {
             difference.
           </Text>
 
-          <div className="mt-8 flex flex-wrap gap-[8px]">
+          <div className="mt-8 flex flex-wrap gap-2">
             {skills.map(({ label, tone }) => (
               <Badge key={label} tone={tone}>
                 {label}
@@ -48,12 +47,22 @@ const About = () => {
           </div>
 
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <Button tone="purple" size="md" onClick={() => {}}>
+            <a
+              href="#contact"
+              className={buttonClasses({ tone: "purple", size: "md" })}
+            >
               Get in touch
-            </Button>
-            <Button tone="blue" variant="quiet" size="md" onClick={() => {}}>
+            </a>
+            <a
+              href="#projects"
+              className={buttonClasses({
+                tone: "blue",
+                variant: "quiet",
+                size: "md",
+              })}
+            >
               See my work
-            </Button>
+            </a>
           </div>
         </div>
       </div>
