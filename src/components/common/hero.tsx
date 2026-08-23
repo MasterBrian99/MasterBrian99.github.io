@@ -12,6 +12,7 @@ import { cn } from "@/lib/utils"
 
 const floatingIcons = [
   {
+    id:1,
     Icon: RustIcon,
     pos: "top-[18%] left-[8%]",
     size: "h-20 w-20",
@@ -21,6 +22,8 @@ const floatingIcons = [
     delay: 0,
   },
   {
+    id:2,
+
     Icon: ReactIcon,
     pos: "top-[16%] right-[10%]",
     size: "h-14 w-14",
@@ -29,6 +32,8 @@ const floatingIcons = [
     delay: 0.4,
   },
   {
+    id:3,
+
     Icon: ArchIcon,
     pos: "bottom-[20%] right-[12%]",
     size: "h-12 w-12",
@@ -37,6 +42,8 @@ const floatingIcons = [
     delay: 0.8,
   },
   {
+    id:4,
+
     Icon: AwsIcon,
     pos: "top-[65%] left-[30%]",
     size: "h-16 w-16",
@@ -45,6 +52,8 @@ const floatingIcons = [
     delay: 1.2,
   },
   {
+    id:5,
+
     Icon: CIcon,
     pos: "top-[55%] left-[5%]",
     size: "h-16 w-16",
@@ -53,6 +62,8 @@ const floatingIcons = [
     delay: 0.6,
   },
   {
+    id:6,
+
     Icon: JavaIcon,
     pos: "top-[52%] right-[6%]",
     size: "h-12 w-12",
@@ -61,6 +72,8 @@ const floatingIcons = [
     delay: 1,
   },
   {
+    id:7,
+
     Icon: ZigIcon,
     pos: "bottom-[16%] left-[13%]",
     size: "h-18 w-18",
@@ -69,6 +82,8 @@ const floatingIcons = [
     delay: 0.2,
   },
   {
+    id:8,
+
     Icon: ElixirIcon,
     pos: "top-[25%] right-[26%]",
     size: "h-13 w-13",
@@ -82,9 +97,9 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden">
       <div className="relative flex min-h-[90vh] w-full flex-col items-center justify-center px-6 py-16">
-        {floatingIcons.map(({ Icon, pos, size, fill, show, dur, delay }) => (
+        {floatingIcons.map(({ Icon, pos, size, fill, show, dur, delay ,id}) => (
           <div
-            key={Icon.displayName ?? Icon.name}
+            key={id}
             className={cn("absolute opacity-80", pos, show)}
             style={{
               animation: `hero-float ${dur}s ease-in-out ${delay}s infinite`,
