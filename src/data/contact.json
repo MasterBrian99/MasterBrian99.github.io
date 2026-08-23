@@ -1,4 +1,13 @@
 {
+  "name": "Pasindu Pramodya",
+  "title": "System Engineer",
+  "interests": [
+    "Distributed Systems",
+    "Performance Engineering",
+    "Open Source",
+    "System Architecture",
+    "Database Design"
+  ],
   "contact": {
     "eyebrow": "Contact",
     "heading": "Let's build something reliable.",
@@ -7,10 +16,22 @@
     "location": "Colombo, Sri Lanka (Remote-friendly)",
     "availability": "Open to collaborations",
     "socials": [
-      { "label": "GitHub", "href": "https://github.com/MasterBrian99", "icon": "github" },
-      { "label": "LinkedIn", "href": "https://www.linkedin.com/in/pasindupramodya", "icon": "linkedin" },
+      {
+        "label": "GitHub",
+        "href": "https://github.com/MasterBrian99",
+        "icon": "github"
+      },
+      {
+        "label": "LinkedIn",
+        "href": "https://www.linkedin.com/in/pasindupramodya",
+        "icon": "linkedin"
+      },
       { "label": "X", "href": "https://x.com/pasindupramodya", "icon": "x" },
-      { "label": "Email", "href": "mailto:hello@pasindupramodya.com", "icon": "mail" }
+      {
+        "label": "Email",
+        "href": "mailto:hello@pasindupramodya.com",
+        "icon": "mail"
+      }
     ]
   },
   "footer": {
@@ -30,7 +51,10 @@
         "title": "Elsewhere",
         "links": [
           { "label": "GitHub", "href": "https://github.com/MasterBrian99" },
-          { "label": "LinkedIn", "href": "https://www.linkedin.com/in/pasindupramodya" },
+          {
+            "label": "LinkedIn",
+            "href": "https://www.linkedin.com/in/pasindupramodya"
+          },
           { "label": "X", "href": "https://x.com/pasindupramodya" },
           { "label": "Email", "href": "mailto:hello@pasindupramodya.com" }
         ]

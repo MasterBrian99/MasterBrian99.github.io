@@ -2,15 +2,121 @@
 import "@/styles/global.css"
 import "@fontsource-variable/nunito"
 import "../components/pouf/pouf.css"
+import contact from "../data/contact.json"
+
+const siteUrl = "https://pasindupramodya.com"
+const {
+  title = `${contact.name} — ${contact.title}`,
+  description = "Senior Software Engineer building distributed systems, database internals, and compilers in Rust and Go. Based in Colombo.",
+} = Astro.props
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href
 ---
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang="en" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
 
-          
+    <!-- Icons & Manifest -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <meta name="generator" content={Astro.generator} />
+
+    <!-- Primary SEO Meta Tags -->
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="author" content={contact.name} />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Keywords -->
+    <meta
+      name="keywords"
+      content={`${contact.name}, ${contact.title}, Software Developer, Portfolio, ${contact.interests.join(", ")}`}
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:site_name" content={contact.name} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:image" content={`${siteUrl}/og_image.png`} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:creator" content="@Master_br1an" />
+    <meta name="twitter:site" content="@Master_br1an" />
+    <meta name="twitter:image" content={`${siteUrl}/og_image.png`} />
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#FFF8E7" />
+    <meta name="color-scheme" content="light" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json" is:inline>
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pasindu Pramodya",
+        "url": "https://pasindupramodya.com",
+        "image": "https://pasindupramodya.com/profile.png",
+        "jobTitle": "Senior Software Engineer",
+        "description": "Senior Software Engineer specializing in distributed systems, real-time data pipelines, and systems programming in Rust and Go.",
+        "knowsAbout": [
+          "Distributed Systems",
+          "Systems Programming",
+          "Rust",
+          "Go",
+          "Real-time Data Pipelines",
+          "Performance Engineering",
+          "Database Internals",
+          "Compiler Design",
+          "LLVM"
+        ],
+        "sameAs": [
+          "https://github.com/masterbrian99",
+          "https://blog.pasindupramodya.com",
+          "https://linkedin.com/in/pasindu-p-konghawaththa-3808861a0",
+          "https://x.com/Master_br1an",
+          "https://orcid.org/0009-0003-6540-9106"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Wavezync"
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "International College of Business and Technology"
+          },
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "Institute of Software Engineering (IJSE)"
+          }
+        ],
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://pasindupramodya.com"
+        },
+        "nationality": "Sri Lankan",
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Colombo, Sri Lanka"
+        }
+      }
+    </script>
     <script is:inline>
       ;(function () {
         var media = window.matchMedia("(prefers-color-scheme: dark)")
@@ -33,8 +139,6 @@ import "../components/pouf/pouf.css"
         }
       })()
     </script>
-
-    <title>Astro App</title>
   </head>
   <body>
     <slot />
